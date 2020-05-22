@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Technomarket catalog</title>
@@ -12,27 +12,30 @@
 </head>
 <body>
 <header>
-  <div>
-    <a href="blank.html" title="Logo">
+  <div class="container">
+    <a href="#" title="Logo">
       Техномарт
     </a>
     <div>
-      <img src="img/icon-search.svg" alt="Search" width="15" height="15">
-      <input type="search">
+      <img src="img/icon-search.svg" alt="Search icon" width="15" height="15">
+      <form action="#">
+        <label for="search-field" class="visually-hidden">Поиск</label>
+        <input type="search" id="search-field" name="search">
+      </form>
     </div>
     <ul>
       <li>
-        <button>
-          <img src="img/icon-bookmark.svg" alt="Favorites" width="15" height="15"> Закладки: 0
-        </button>
+        <a href="#">
+          <img src="img/icon-bookmark.svg" alt="Favorites icon" width="15" height="15">Закладки: 0
+        </a>
       </li>
       <li>
-        <button>
-          <img src="img/icon-cart.svg" alt="Bucket" width="15" height="15">Корзина: 10
-        </button>
+        <a href="#">
+          <img src="img/icon-cart.svg" alt="Bucket icon" width="15" height="15">Корзина: 10
+        </a>
       </li>
       <li>
-        <button>Оформить заказ</button>
+        <a href="#">Оформить заказ</a>
       </li>
     </ul>
   </div>
@@ -41,29 +44,44 @@
       строительных материалов<br>
       и инструментов для ремонта</p>
     <section>
-      <img src="img/icon-phone.svg" width="15" height="15">
-      <p>+7 (812) 555-05-55</p>
+      <h2 class="visually-hidden">Контакты</h2>
+      <div>
+        <img src="img/icon-phone.svg" width="15" height="15" alt="phone icon">
+        <a href="tel:+78125550555" aria-label="Номер телефона">+7 (812) 555-05-55</a>
+      </div>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
     </section>
     <section>
-      <div>
-        <img src="img/icon-user.svg" alt="User" width="15" height="15">
-        <p>Равшан Джамшутович</p>
-        <img src="img/icon-login.svg" alt="Exit" width="15" height="15">
-        <a href="blank.html" title="Перейти в Мои заказы">Мои заказы</a>
-        <a href="blank.html" title="Перейти в Личный кабинет">Личный кабинет</a>
-      </div>
+      <img src="img/icon-user.svg" alt="User icon" width="15" height="15">
+      <p>Равшан Джамшутович</p>
+      <img src="img/icon-login.svg" alt="Exit icon" width="15" height="15">
+      <a href="#" title="Перейти в Мои заказы">Мои заказы</a>
+      <a href="#" title="Перейти в Личный кабинет">Личный кабинет</a>
     </section>
   </div>
   <nav>
     <ul>
-      <li><a href="blank.html" title="Перейти на Главную">Главная</a></li>
-      <li><a href="blank.html" title="Перейти в Компанию">Компания</a></li>
-      <li><a href="blank.html" title="Перейти в Каталог">Каталог</a></li>
-      <li><a href="blank.html" title="Перейти в Новости">Новости</a></li>
-      <li><a href="blank.html" title="Перейти в Спецпредложения">Спецпредложения</a></li>
-      <li><a href="blank.html" title="Перейти в Доставку">Доставка</a></li>
-      <li><a href="blank.html" title="Перейти в Контакты">Контакты</a></li>
+      <li>
+        <a href="#" title="Перейти на Главную">Главная</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Компанию">Компания</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Каталог">Каталог</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Новости">Новости</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Спецпредложения">Спецпредложения</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Доставку">Доставка</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Контакты">Контакты</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -71,77 +89,90 @@
   <h1>Каталог техномаркета</h1>
   <ul>
     <li>
-      <a href="blank.html" title="Перейти Домой">
-        <img src="img/icon-home.svg" width="15" height="15" alt="Home">
+      <a href="#" title="Перейти Домой">
+        <img src="img/icon-home.svg" width="15" height="15" alt="Home image">
       </a>
     </li>
     <li>
-      <a href="blank.html" title="Перейти в Каталог">Каталог</a>
+      <a href="#" title="Перейти в Каталог">Каталог</a>
     </li>
     <li>
-      <a href="blank.html" title="Перейти в Инструменты">Инструмент</a>
+      <a href="#" title="Перейти в Инструменты">Инструмент</a>
     </li>
     <li>
-      <a href="blank.html" title="Перейти в Перфораторы">Перфораторы</a>
+      <a href="#" title="Перейти в Перфораторы">Перфораторы</a>
     </li>
   </ul>
   <h2>Перфораторы</h2>
   <aside>
-    <section>
-      <p>Фильтр:</p>
-      <p>Цена:</p>
-      <!--      Здесь ползунок-->
-      <p>0</p>
-      <p>30 000</p>
-    </section>
-    <p>Производители:</p>
-    <ul>
-      <li>Bosh</li>
-      <li>Интерскол</li>
-      <li>Makita</li>
-      <li>Dewalt</li>
-      <li>Hitachi</li>
-    </ul>
-    <p>Питание:</p>
-    <ul>
-      <li>Аккумуляторные</li>
-      <li>Сетевые</li>
-    </ul>
-    <button>Показать</button>
+    <p>Фильтр:</p>
+    <form action="#">
+      <section>
+        <label for="price-field">Цена:</label>
+        <input type="range" min="0" max="30000" id="price-field">
+        <p>0</p>
+        <p>30 000</p>
+      </section>
+      <fieldset>
+        <legend>Производители:</legend>
+        <input type="checkbox" name="bosh" id="bosh-field" checked>
+        <label for="bosh-field">Bosh</label>
+        <input type="checkbox" name="interscol" id="interscol-field">
+        <label for="interscol-field">Интерскол</label>
+        <input type="checkbox" name="makita" id="makita-field" checked>
+        <label for="makita-field">Makita</label>
+        <input type="checkbox" name="dewalt" id="dewalt-field">
+        <label for="dewalt-field">Dewalt</label>
+        <input type="checkbox" name="Hitachi" id="hitachi-field">
+        <label for="hitachi-field">Hitachi</label>
+      </fieldset>
+      <fieldset>
+        <legend>Питание:</legend>
+        <input type="radio" name="energy-type" value="battery" id="battery-field" checked>
+        <label for="battery-field">Аккумуляторные</label>
+        <input type="radio" name="energy-type" value="network" id="network-field">
+        <label for="network-field">Сетевые</label>
+      </fieldset>
+      <button>Показать</button>
+    </form>
   </aside>
   <section>
     <section>
       <p>Сортировка:</p>
-      <p>По цене</p>
-      <p>По типу</p>
-      <p>По функционалу</p>
-      <button>Вверх</button>
-      <button>Вниз</button>
+      <button type="button">По цене</button>
+      <button type="button">По типу</button>
+      <button type="button">По функционалу</button>
+      <button type="button">
+        <img src="img/icon-upper-dir.svg" alt="upper dir image" width="11" height="10">
+      </button>
+      <button type="button">
+        <img src="img/icon-down-dir.svg" alt="upper dir image" width="11" height="10">
+      </button>
     </section>
     <article>
       <img src="img/object-6000.jpg" alt="instrument 6000" width="125" height="110">
       <p>Перфоратор BOSCH<br>
         BFG 6000</p>
       <p>30500 Р.</p>
-      <p>25500 Р.</p>
+      <a href="#" aria-label="Ссылка на покупку">25500 Р.</a>
     </article>
     <article>
       <img src="img/object-6000.jpg" alt="instrument 6000" width="125" height="110">
       <p>Перфоратор BOSCH<br>
         BFG 6000</p>
       <p>30500 Р.</p>
-      <p>25500 Р.</p>
+      <a href="#" aria-label="Ссылка на покупку">25500 Р.</a>
     </article>
     <article>
       <div>New</div>
-      <button>
-        <img src="img/icon-cart.svg" alt="Buy" width="15" height="15"> Купить
+      <button type="button">
+        <img src="img/icon-cart.svg" alt="Buy icon" width="15" height="15"> Купить
       </button>
-      <button>В закладки</button>
+      <button type="button">В закладки</button>
       <p>Перфоратор BOSCH<br>
         BFG 6000</p>
       <p>30500 Р.</p>
-      <p>25500 Р.</p>
+      <a href="#" aria-label="Ссылка на покупку">25500 Р.</a>
     </article>
     <article>
       <div>New</div>
@@ -149,21 +180,21 @@
       <p>Перфоратор BOSCH<br>
         BFG 3000</p>
       <p>22500 Р.</p>
-      <p>15500 Р.</p>
+      <a href="#" aria-label="Ссылка на покупку">15500 Р.</a>
     </article>
     <article>
       <img src="img/object-6000.jpg" alt="instrument 6000" width="125" height="110">
       <p>Перфоратор BOSCH<br>
         BFG 6000</p>
       <p>30500 Р.</p>
-      <p>25500 Р.</p>
+      <a href="#" aria-label="Ссылка на покупку">25500 Р.</a>
     </article>
     <article>
       <div>New</div>
       <img src="img/object-2000.jpg" alt="instrument 2000" width="125" height="110">
       <p>Перфоратор BOSCH<br>
         BFG 2000</p>
-      <p>12500 Р.</p>
+      <a href="#" aria-label="Ссылка на покупку">12500 Р.</a>
     </article>
     <article>
       <div>New</div>
@@ -171,28 +202,28 @@
       <p>Перфоратор BOSCH<br>
         BFG 3000</p>
       <p>22500 Р.</p>
-      <p>15500 Р.</p>
+      <a href="#" aria-label="Ссылка на покупку">15500 Р.</a>
     </article>
     <article>
       <img src="img/object-6000.jpg" alt="instrument 6k" width="125" height="110">
       <p>Перфоратор BOSCH<br>
         BFG 6000</p>
       <p>30500 Р.</p>
-      <p>25500 Р.</p>
+      <a href="#" aria-label="Ссылка на покупку">25500 Р.</a>
     </article>
     <article>
       <div>New</div>
       <img src="img/object-2000.jpg" alt="instrument 2k" width="125" height="110">
       <p>Перфоратор BOSCH<br>
         BFG 2000</p>
-      <p>12500 Р.</p>
+      <a href="#" aria-label="Ссылка на покупку">12500 Р.</a>
     </article>
   </section>
   <section>
-    <a href="blank.html" title="Перейти на 1ую страницу">1</a>
-    <a href="blank.html" title="Перейти на 2ую страницу">2</a>
-    <a href="blank.html" title="Перейти на 3ью страницу">3</a>
-    <a href="blank.html" title="Перейти на Следующую">Следующая</a>
+    <a href="#" title="Перейти на 1ую страницу" aria-label="Перейти на 1ую страницу">1</a>
+    <a href="#" title="Перейти на 2ую страницу" aria-label="Перейти на 2ую страницу">2</a>
+    <a href="#" title="Перейти на 3ью страницу" aria-label="Перейти на 3ью страницу">3</a>
+    <a href="#" title="Перейти на Следующую" aria-label="Перейти на следующую страницу">Следующая</a>
   </section>
   <section>
     <h3>Пара слов о перфораторах</h3>
@@ -207,7 +238,7 @@
 <footer>
   <div>
     <section>
-      <a href="blank.html" title="Перейти на Главную">
+      <a href="#" title="Перейти на Главную" aria-label="Перейти на главную">
         Техномарт
       </a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -215,31 +246,68 @@
     </section>
     <section>
       <ul>
-        <li><a href="blank.html" title="Перейти в Компанию">Компания</a></li>
-        <li><a href="blank.html" title="Перейти в Новости">Новости</a></li>
-        <li><a href="blank.html" title="Перейти в Каталог">Каталог</a></li>
-        <li><a href="blank.html" title="Перейти в Доставку">Доставка</a></li>
-        <li><a href="blank.html" title="Перейти в Контакты">Контакты</a></li>
+        <li>
+          <a href="#" title="Перейти в Компанию">Компания</a>
+        </li>
+        <li>
+          <a href="#" title="Перейти в Новости">Новости</a>
+        </li>
+        <li>
+          <a href="#" title="Перейти в Каталог">Каталог</a>
+        </li>
+        <li>
+          <a href="#" title="Перейти в Доставку">Доставка</a>
+        </li>
+        <li>
+          <a href="#" title="Перейти в Контакты">Контакты</a>
+        </li>
       </ul>
       <ul>
-        <li><a href="blank.html" title="Перейти в Материалы">Материалы</a></li>
-        <li><a href="blank.html" title="Перейти в Технику">Техника</a></li>
-        <li><a href="blank.html" title="Перейти в Инструменты">Инструмент</a></li>
-        <li><a href="blank.html" title="Перейти в Спецпредложения">Спецпредложения</a></li>
+        <li>
+          <a href="#" title="Перейти в Материалы">Материалы</a>
+        </li>
+        <li>
+          <a href="#" title="Перейти в Технику">Техника</a>
+        </li>
+        <li>
+          <a href="#" title="Перейти в Инструменты">Инструмент</a>
+        </li>
+        <li>
+          <a href="#" title="Перейти в Спецпредложения">Спецпредложения</a>
+        </li>
       </ul>
     </section>
   </div>
   <div>
     <p>&copy; 2010-2019 Компания "Техномарт"<br>
       Все права защищены</p>
-    <img src="img/icon-vk.svg" alt="vk" width="15" height="15">
-    <img src="img/icon-fb.svg" alt="fb" width="15" height="15">
-    <img src="img/icon-insta.svg" alt="ins" width="15" height="15">
+    <a href="#">
+      <img src="img/icon-vk.svg" alt="vk icon" width="15" height="15">
+    </a>
+    <a href="#">
+      <img src="img/icon-fb.svg" alt="fb icon" width="15" height="15">
+    </a>
+    <a href="#">
+      <img src="img/icon-insta.svg" alt="instagram icon" width="15" height="15">
+    </a>
     <p>Обратная связь:<br>
-      mail@htmlacademy.ru</p>
+      <a href="#" aria-label="Ссылка на отправку письма">mail@htmlacademy.ru</a></p>
     <p>Разработано -<br>
-      htmlacademy.ru</p>
+      <a href="#" aria-label="Ссылка на сайт изготовителя">htmlacademy.ru</a></p>
   </div>
 </footer>
+<section>
+  <h2 class="visually-hidden">Сообщение о добавлении товара</h2>
+  <div>Красная полоска</div>
+  <div>
+    <img src="img/icon-mark.png" alt="Успешно добавлен картинка.">
+    <p>Товар добавлен в корзину!</p>
+    <button type="button">Закрыть</button>
+  </div>
+  <div>
+    <button type="button">Оформить заказ</button>
+    <button type="button">Продолжить покупки</button>
+  </div>
+</section>
 </body>
 </html>
