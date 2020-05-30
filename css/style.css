@@ -1,17 +1,19 @@
 :root {
   --basic-red: #ee3643;
   --basic-green: #63a63e;
-  --basic-grey: #3d546f;
+  --basic-grey: #32425C;
   --basic-yellow: #ffd180;
   --basic-greylight: #c5c5c5;
-  --basic-greydark: #32425c;
+  --basic-darkgrey: #293449;
   --basic-background: #f1f5f7;
   --white: #fff;
+  --black: #000;
   --special-yellow: #ffbf47;
   --special-blue: #3bbce3;
   --special-lilac: #dc91d8;
   --special-greenlight: #8ed78f;
   --special-yellowlight: #ffd180;
+  --special-almost-black: #212a3a;
 
   --sucess: #5fbb2d;
   --warning: #ffbf47;
@@ -38,11 +40,6 @@ img {
   height: auto;
 }
 
-ul {
-  list-style: none;
-  padding-inline-start: 0;
-}
-
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -53,117 +50,130 @@ ul {
   white-space: nowrap; /* added line */
 }
 
-.top-row, .top-row a {
-  background-color: var(--basic-greydark);
+.color-white {
   color: var(--white);
-  font-size: 18px;
 }
 
-#order-link {
+.color-yellow {
+  color: var(--basic-yellow);
+}
+
+.color-red {
+  color: var(--basic-red);
+}
+
+.color-black {
+  color: var(--black);
+}
+
+.color-darkgrey {
+  color: var(--basic-darkgrey);
+}
+
+.background-basic-grey {
+  background-color: var(--basic-grey);
+}
+
+.background-basic-darkgrey {
+  background-color: var(--basic-darkgrey);
+}
+
+.background-basic-green {
   background-color: var(--basic-green);
 }
 
-.top-row li {
-  padding: 9px;
-}
-
-.middle-row {
+.background-basic-background {
   background-color: var(--basic-background);
 }
 
-.middle-row p:first-child {
-  color: var(--basic-red);
+.background-white {
+  background-color: var(--white);
+}
+
+.order-navigation,
+.authentication-menu,
+.site-navigation,
+.producer-list,
+.service-list,
+.partner-list,
+.catalog-list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.top-row {
+  font-size: 18px;
+}
+
+.short-description {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
 }
 
-#contacts div {
+.contacts-phone-block {
   border: 2px var(--white) solid;
 }
 
-#contacts a {
-  color: var(--basic-red);
+.contacts-phone-link {
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
 }
 
-#contacts p:last-child {
+.contacts-address {
   font-size: 14px;
   line-height: 24px;
 }
 
-#authentication li {
+.authentication-menu {
   font-size: 21px;
   line-height: 21px;
-  padding: 12px;
-  background-color: var(--white);
 }
 
-#main-nav {
+.main-nav {
   font-size: 18px;
   line-height: 24px;
-  background-color: var(--basic-greydark);
 }
 
-#main-nav li {
-  padding: 16px;
-}
-
-#main-nav a {
-  color: var(--white);
-}
-
-#description h2 {
+.description-header {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
 }
 
-#description ul {
+.partner-list {
   list-style-image: url("../img/line.svg");
-}
-
-#description li {
   font-size: 18px;
   line-height: 24px;
 }
 
-#description section:first-child a:last-child, #description button {
-  color: var(--white);
-  background-color: var(--basic-red);
-  padding: 10px 40px;
+.contacts-button {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--basic-red);
 }
 
-footer {
+.main-footer {
   font-size: 18px;
   line-height: 24px;
-  color: var(--white);
-  background-color: var(--basic-grey);
 }
 
-footer section ul:first-child a {
-  color: inherit;
-}
-
-footer section ul:nth-child(2) a, footer div:nth-child(2) a {
-  color: var(--basic-yellow);
-}
-
-footer div:nth-child(2) {
+.bottom-row {
   font-size: 16px;
   line-height: 18px;
-  background-color: var(--basic-greydark);
 }
 
-footer div:nth-child(2) img {
-  background-color: black;
+.icon {
   padding: 10px;
   border-radius: 50%;
   height: 25px;
   width: 25px;
+  object-fit: none;
+}
+
+.search-input::placeholder{
+  color: var(--white);
 }

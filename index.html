@@ -3,93 +3,89 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-<!--  <style>-->
-<!--    img[src*=".svg"] {-->
-<!--      background-color: #293449;-->
-<!--      padding: 5px;-->
-<!--    }-->
-<!--  </style>-->
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="background-basic-background">
 <header>
-  <div class="top-row">
-    <a href="#" title="Logo" id="logo-link">
+  <div class="top-row background-basic-darkgrey color-white">
+    <a href="#" title="Logo">
       <img src="img/logo.png" height="47" width="220" alt="Logo">
     </a>
     <div>
       <form action="#">
-        <button aria-label="Search-button">
+        <button aria-label="Search-button" class="search-button background-basic-darkgrey">
           <img src="img/icon-search.svg" alt="Search icon" width="15" height="15">
         </button>
         <label for="search-field" class="visually-hidden">Поиск</label>
-        <input type="search" name="search" id="search-field" placeholder="Поиск:">
+        <input type="search" name="search" id="search-field" placeholder="Поиск:"
+               class="search-input background-basic-darkgrey">
       </form>
     </div>
-    <ul>
+    <ul class="order-navigation">
       <li>
-        <a href="#">
+        <a href="#" class="color-white">
           <img src="img/icon-bookmark.svg" alt="Favorites icon" width="15" height="15">Закладки: 0
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="color-white">
           <img src="img/icon-cart.svg" alt="Bucket icon" width="15" height="15">Корзина: 0
         </a>
       </li>
       <li>
-        <a href="#" id="order-link">Оформить заказ</a>
+        <a href="#" class="color-white background-basic-green">Оформить заказ</a>
       </li>
     </ul>
   </div>
-  <div class="middle-row">
-    <p>Интернет-магазин<br>
+  <div class="">
+    <p class="short-description color-red">Интернет-магазин<br>
       строительных материалов<br>
       и инструментов для ремонта</p>
-    <section id="contacts">
+    <section>
       <h2 class="visually-hidden">Контакты</h2>
-      <div>
+      <div class="contacts-phone-block">
         <img src="img/icon-phone.svg" alt="Call icon" width="15" height="15">
-        <a href="tel:+78125550555" aria-label="Номер телефона">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555" aria-label="Номер телефона" class="contacts-phone-link color-red">+7 (812)
+          555-05-55</a>
       </div>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+      <p class="contacts-address color-darkgrey">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
     </section>
-    <ul id="authentication">
+    <ul class="authentication-menu">
       <li>
-        <a href="#" aria-label="Ссылка для входа">
+        <a href="#" aria-label="Ссылка для входа" class="color-black">
           <img src="img/icon-login.svg" alt="Login icon" width="15" height="15">
           Войти
         </a>
       </li>
       <li>
-        <a href="#" aria-label="Ссылка для регистрации">Регистрация</a>
+        <a href="#" aria-label="Ссылка для регистрации" class="color-black">Регистрация</a>
       </li>
     </ul>
-    <nav id="main-nav">
-      <ul>
+    <nav class="main-nav background-basic-grey">
+      <ul class="site-navigation">
         <li>
-          <a href="#" title="Перейти на Главную">Главная</a>
+          <a href="#" title="Перейти на Главную" class="color-white">Главная</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Компанию">Компания</a>
+          <a href="#" title="Перейти в Компанию" class="color-white">Компания</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Каталог">Каталог</a>
+          <a href="#" title="Перейти в Каталог" class="color-white">Каталог</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Новости">Новости</a>
+          <a href="#" title="Перейти в Новости" class="color-white">Новости</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Спецпредложения">Спецпредложения</a>
+          <a href="#" title="Перейти в Спецпредложения" class="color-white">Спецпредложения</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Доставку">Доставка</a>
+          <a href="#" title="Перейти в Доставку" class="color-white">Доставка</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Контакты">Контакты</a>
+          <a href="#" title="Перейти в Контакты" class="color-white">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -173,7 +169,7 @@
   </div>
   <section>
     <h2 class="visually-hidden">Производители</h2>
-    <ul>
+    <ul class="producer-list">
       <li>
         <img src="img/bosch.png" alt="Bosh image" width="150" height="100">
       </li>
@@ -206,7 +202,7 @@
       Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
   </section>
   <section>
-    <ul>
+    <ul class="service-list">
       <li>
         <button type="button">Доставка</button>
       </li>
@@ -226,36 +222,39 @@
       поднимая его на ваш этаж!</p>
     <img src="img/Car.png" alt="Delivery icon" width="450" height="250">
   </section>
-  <div id="description">
+  <div class="background-white">
     <section>
-      <h2>Компания "Техномарт"</h2>
+      <h2 class="description-header">Компания "Техномарт"</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
         ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
         гастарбайтерах.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:
       </p>
-      <ul>
-        <li>Деловые линии
+      <ul class="partner-list">
         <li>
-        <li>Автотрейдинг
+          Деловые линии
         <li>
-        <li>ЖелДорЭкспедиция
+        <li>
+          Автотрейдинг
+        <li>
+        <li>
+          ЖелДорЭкспедиция
         <li>
       </ul>
-      <a href="#" title="Перейти в Подробную информацию о компании">Подробнее о компании</a>
+      <a href="#" title="Перейти в Подробную информацию о компании" class="contacts-button">Подробнее о компании</a>
     </section>
     <section>
-      <h2>Контакты</h2>
+      <h2 class="description-header">Контакты</h2>
       <p>Вы можете забрать товар сами,<br>
         заехав в наш офис:</p>
       <img src="img/map.png" alt="Technomarket map coordinates" width="300" height="158">
-      <button type="button">Заблудились? Напишите нам!</button>
+      <button type="button" class="contacts-button">Заблудились? Напишите нам!</button>
     </section>
   </div>
 </main>
-<footer>
-  <div>
+<footer class="main-footer color-white background-basic-darkgrey">
+  <div class="background-basic-grey">
     <section>
       <a href="#" title="Лого">
         <img src="img/big-logo.png" height="47" width="220" alt="Logo">
@@ -264,55 +263,56 @@
         +7 (812) 555-05-55</p>
     </section>
     <section>
-      <ul>
+      <ul class="site-navigation">
         <li>
-          <a href="#" title="Перейти в Компанию">Компания</a>
+          <a href="#" title="Перейти в Компанию" class="color-white">Компания</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Новости">Новости</a>
+          <a href="#" title="Перейти в Новости" class="color-white">Новости</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Каталог">Каталог</a>
+          <a href="#" title="Перейти в Каталог" class="color-white">Каталог</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Доставку">Доставка</a>
+          <a href="#" title="Перейти в Доставку" class="color-white">Доставка</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Контакты">Контакты</a>
+          <a href="#" title="Перейти в Контакты" class="color-white">Контакты</a>
         </li>
       </ul>
-      <ul>
+      <ul class="catalog-list">
         <li>
-          <a href="#" title="Перейти в Материалы">Материалы</a>
+          <a href="#" title="Перейти в Материалы" class="color-yellow">Материалы</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Технику">Техника</a>
+          <a href="#" title="Перейти в Технику" class="color-yellow">Техника</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Инструмент">Инструмент</a>
+          <a href="#" title="Перейти в Инструмент" class="color-yellow">Инструмент</a>
         </li>
         <li>
-          <a href="#" title="Перейти в Спецпредложения">Спецпредложения</a>
+          <a href="#" title="Перейти в Спецпредложения" class="color-yellow">Спецпредложения</a>
         </li>
       </ul>
     </section>
   </div>
-  <div>
+  <div class="bottom-row">
     <p>&copy; 2010-2019 Компания "Техномарт"<br>
       Все права защищены</p>
     <a href="#">
-      <img src="img/icon-vk.svg" alt="vk icon" width="15" height="15">
+      <img src="img/icon-vk.svg" alt="vk icon" width="15" height="15" class="icon">
     </a>
     <a href="#">
-      <img src="img/icon-fb.svg" alt="fb icon" width="15" height="15">
+      <img src="img/icon-fb.svg" alt="fb icon" width="15" height="15" class="icon">
     </a>
     <a href="#">
-      <img src="img/icon-insta.svg" alt="ins icon" width="15" height="15">
+      <img src="img/icon-insta.svg" alt="ins icon" width="15" height="15" class="icon">
     </a>
     <p>Обратная связь:<br>
-      <a href="mailto:mail@htmlacademy.ru" aria-label="Отправить нам письмо">mail@htmlacademy.ru</a></p>
+      <a href="mailto:mail@htmlacademy.ru" aria-label="Отправить нам письмо"
+         class="color-yellow">mail@htmlacademy.ru</a></p>
     <p>Разработано -<br>
-      <a href="#" aria-label="Ссылка на сайт изготовителя">htmlacademy.ru</a></p>
+      <a href="#" aria-label="Ссылка на сайт изготовителя" class="color-yellow">htmlacademy.ru</a></p>
   </div>
 </footer>
 <section class="visually-hidden">
