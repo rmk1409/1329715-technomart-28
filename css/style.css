@@ -264,6 +264,11 @@ img {
   background-color: var(--basic-green);
 }
 
+.upper-logo {
+  color: var(--white);
+  background-color: var(--basic-red);
+}
+
 .search-input::placeholder {
   color: var(--white);
 }
