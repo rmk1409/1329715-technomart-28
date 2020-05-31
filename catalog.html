@@ -120,13 +120,15 @@
   <h2 class="product-type">Перфораторы</h2>
   <div class="background-white pt-sans">
     <aside class="filter">
-      <p>Фильтр:</p>
+      <p class="filter-paragraph">Фильтр:</p>
       <form action="#">
         <section>
-          <label for="price-field">Цена:</label>
-          <input type="range" min="0" max="30000" id="price-field">
-          <p>0</p>
-          <p>30 000</p>
+          <label for="price-field" class="filter-price-label">Цена:</label>
+          <div class="filter-range-section">
+            <input type="range" min="0" max="30000" id="price-field">
+          </div>
+          <p class="filter-paragraph">0</p>
+          <p class="filter-paragraph">30 000</p>
         </section>
         <fieldset>
           <legend class="legend">Производители:</legend>
@@ -152,15 +154,15 @@
       </form>
     </aside>
     <section>
-      <section>
-        <p>Сортировка:</p>
-        <button type="button">По цене</button>
-        <button type="button">По типу</button>
-        <button type="button">По функционалу</button>
-        <button type="button">
+      <section class="sort-section">
+        <p class="sort-section-paragraph">Сортировка:</p>
+        <button type="button" class="sort-section-button sort-section-button-active">По цене</button>
+        <button type="button" class="sort-section-button">По типу</button>
+        <button type="button" class="sort-section-button">По функционалу</button>
+        <button type="button" class="sort-section-button-sort">
           <img src="img/icon-upper-dir.svg" alt="upper dir image" width="11" height="10">
         </button>
-        <button type="button">
+        <button type="button" class="sort-section-button-sort">
           <img src="img/icon-down-dir.svg" alt="upper dir image" width="11" height="10">
         </button>
       </section>
@@ -235,19 +237,19 @@
       </article>
     </section>
     <section>
-      <a href="#" title="Перейти на 1ую страницу" aria-label="Перейти на 1ую страницу">1</a>
-      <a href="#" title="Перейти на 2ую страницу" aria-label="Перейти на 2ую страницу">2</a>
-      <a href="#" title="Перейти на 3ью страницу" aria-label="Перейти на 3ью страницу">3</a>
-      <a href="#" title="Перейти на Следующую" aria-label="Перейти на следующую страницу">Следующая</a>
+      <a href="#" title="Перейти на 1ую страницу" aria-label="Перейти на 1ую страницу" class="page-number page-number-active">1</a>
+      <a href="#" title="Перейти на 2ую страницу" aria-label="Перейти на 2ую страницу" class="page-number">2</a>
+      <a href="#" title="Перейти на 3ью страницу" aria-label="Перейти на 3ью страницу" class="page-number">3</a>
+      <a href="#" title="Перейти на Следующую" aria-label="Перейти на следующую страницу" class="page-number">Следующая</a>
     </section>
   </div>
-  <section>
-    <h3>Пара слов о перфораторах</h3>
-    <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбения отверстий в кирпиче,
+  <section class="post-script">
+    <h3 class="post-script-header">Пара слов о перфораторах</h3>
+    <p class="post-script-paragraph">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбения отверстий в кирпиче,
       бетоне и камне.</p>
-    <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+    <p class="post-script-paragraph">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
       шуруповерта и отбойного молотка.</p>
-    <p>В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная
+    <p class="post-script-paragraph">В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная
       дрель.</p>
   </section>
 </main>

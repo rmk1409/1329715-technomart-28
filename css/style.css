@@ -24,6 +24,7 @@
 
   --light-grey: #eaeaea;
   --light-grey2: #a9a9a9;
+  --just-grey: #f7f3ec;
 }
 
 body {
@@ -147,11 +148,13 @@ img {
 
 .path-list {
   text-transform: uppercase;
-  font-size: 13px;
   line-height: 18px;
 }
 
-.product-type {
+.product-type,
+.description-header,
+.service-header,
+.post-script-header {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
@@ -159,6 +162,8 @@ img {
 
 .filter {
   text-transform: uppercase;
+  font-family: "Pt Sans", sans-serif;
+  line-height: 18px;
 }
 
 .legend {
@@ -168,12 +173,10 @@ img {
 }
 
 .filter-label {
-  font-size: 13px;
   line-height: 18px;
 }
 
 .filter-button {
-  font-size: 13px;
   line-height: 18px;
   text-transform: inherit;
 }
@@ -204,12 +207,6 @@ img {
 .button {
   text-transform: uppercase;
   color: var(--white);
-}
-
-.description-header {
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 30px;
 }
 
 .partner-list {
@@ -378,17 +375,66 @@ img {
   background-color: var(--basic-background);
 }
 
-.service-header {
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 30px;
-}
-
 .service-button {
   color: var(--white);
   background-color: var(--basic-grey);
   outline: none;
   border: none;
+}
+
+.filter-paragraph,
+.filter-range-section,
+.filter-paragraph,
+.sort-section {
+  background-color: var(--just-grey);
+}
+
+.sort-section-paragraph {
+  text-transform: uppercase;
+}
+
+.filter-price-label {
+  font-weight: bold;
+}
+
+.sort-section-button {
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px dashed var(--basic-red);
+  opacity: 0.3;
+}
+
+.sort-section-button-sort {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.sort-section-button-active {
+  color: var(--basic-red);
+  border: none;
+  opacity: 1;
+}
+
+.page-number {
+  border: 1px solid var(--light-grey);
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.page-number-active {
+  background-color: var(--basic-red);
+  color: var(--white);
+}
+
+.post-script-paragraph {
+  font-family: "Pt Sans", sans-serif;
+}
+
+.page-number:active {
+  border-color: var(--basic-red);
 }
 
 .service-button:hover {
@@ -400,6 +446,16 @@ img {
 .service-button:active {
   color: var(--basic-grey);
   background-color: var(--white);
+}
+
+.sort-section-button:hover {
+  opacity: 1;
+  border-bottom-style: solid;
+}
+
+.sort-section-button:active {
+  color: var(--basic-red);
+  border: none;
 }
 
 .producer-list__item:hover {
