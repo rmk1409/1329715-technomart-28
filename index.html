@@ -91,131 +91,135 @@
     </nav>
   </div>
 </header>
-<main>
+<main class="background-white">
   <section>
-    <div>
-      <div>New</div>
-      <p>Материалы</p>
-      <a href="#" title="Перейти в Материалы на любой вкус">На любой вкус</a>
+    <div class="card material">
+      <div class="new">New</div>
+      <h3 class="card-header">Материалы</h3>
+      <a href="#" title="Перейти в Материалы на любой вкус" class="button card-button">На любой вкус</a>
       <img src="img/icon-1.svg" alt="Материалы иконка" width="75" height="60">
     </div>
-    <div>
-      <p>Инструмент</p>
-      <a href="#" title="Перейти в Инструмент на все случаи">На все случаи</a>
+    <div class="card instrument">
+      <h3 class="card-header">Инструмент</h3>
+      <a href="#" title="Перейти в Инструмент на все случаи" class="button card-button">На все случаи</a>
       <img src="img/icon-2.svg" alt="Инструмент иконка" width="75" height="60">
     </div>
-    <div>
-      <p>Техника</p>
-      <a href="#" title="Перейти в Технику для стройки">Для стройки</a>
+    <div class="card technique">
+      <h3 class="card-header">Техника</h3>
+      <a href="#" title="Перейти в Технику для стройки" class="button card-button">Для стройки</a>
       <img src="img/icon-3.svg" alt="Техника иконка" width="75" height="60">
     </div>
-    <div>
-      <p>Перфораторы</p>
-      <p>Настоящие мужские игрушки</p>
-      <button type="button" title="Предыдущий слайд" aria-label="Previous slide">&lt;</button>
-      <button type="button" title="Следующий слайд" aria-label="Next slide">&gt;</button>
-      <a href="#" title="Перейти в Каталог">Открыть каталог</a>
+    <div class="card-catalog">
+      <div class="card-catalog-shadow">
+        <h3 class="card-catalog-header">Перфораторы</h3>
+        <p class="card-catalog-paragraph">Настоящие мужские игрушки</p>
+      </div>
+      <button type="button" title="Предыдущий слайд" aria-label="Previous slide" class="card-catalog-button">&lt;</button>
+      <button type="button" title="Следующий слайд" aria-label="Next slide" class="card-catalog-button">&gt;</button>
+      <a href="#" title="Перейти в Каталог" class="button card-catalog-open-button">Открыть каталог</a>
     </div>
-    <div>
-      <p>Скидки</p>
-      <a href="#" title="Перейти в Скидочные товары" aria-label="Ссылка на скидочные товары">На 350 товаров</a>
+    <div class="card discount">
+      <h3 class="card-header">Скидки</h3>
+      <a href="#" title="Перейти в Скидочные товары" aria-label="Ссылка на скидочные товары" class="button card-button">На 350 товаров</a>
       <img src="img/icon-4.svg" alt="Скидка иконка" width="75" height="60">
     </div>
-    <div>
-      <p>Доставка</p>
-      <a href="#" title="Перейти в условия доставки" aria-label="Ссылка на условия доставки">Бесплатно</a>
+    <div class="card delivery">
+      <h3 class="card-header">Доставка</h3>
+      <a href="#" title="Перейти в условия доставки" aria-label="Ссылка на условия доставки" class="button card-button">Бесплатно</a>
       <img src="img/icon-5.svg" alt="Доставка иконка" width="75" height="60">
     </div>
   </section>
-  <div>
-    <p>Популярные товары:</p>
-    <a href="#" title="Перейти на все популярные товары">Все популярные товары</a>
+  <div class="popular-items">
+    <p class="popular-items-paragraph">Популярные товары:</p>
+    <a href="#" title="Перейти на все популярные товары" class="button popular-items-button">Все популярные товары</a>
   </div>
   <section>
     <h2 class="visually-hidden">Товары</h2>
-    <article>
+    <article class="product-item">
       <img src="img/object-9000.jpg" alt="instrument 9к" width="125" height="110">
-      <h3>Перфоратор BOSCH<br>
+      <h3 class="product-item-header">Перфоратор BOSCH<br>
         BFG 9000</h3>
-      <p>32500 Р.</p>
-      <a href="#" aria-label="Купить товар">25500 Р.</a>
+      <p class="product-item-old-price">32500 Р.</p>
+      <a href="#" aria-label="Купить товар" class="color-white background-basic-red">25500 Р.</a>
     </article>
-    <article>
-      <div>New</div>
+    <article class="product-item">
+      <div class="new color-white">New</div>
       <img src="img/object-3000.jpg" alt="instrument 3k" width="125" height="110">
-      <h3>Перфоратор BOSCH<br>
+      <h3 class="product-item-header">Перфоратор BOSCH<br>
         BFG 3000</h3>
-      <p>22500 Р.</p>
-      <a href="#" aria-label="Купить товар">15500 Р.</a>
+      <p class="product-item-old-price">22500 Р.</p>
+      <a href="#" aria-label="Купить товар" class="color-white background-basic-red">15500 Р.</a>
     </article>
-    <article>
+    <article class="product-item">
       <img src="img/object-6000.jpg" alt="instrument 6k" width="125" height="110">
-      <h3>Перфоратор BOSCH<br>
+      <h3 class="product-item-header">Перфоратор BOSCH<br>
         BFG 6000</h3>
-      <p>30500 Р.</p>
-      <a href="#" aria-label="Купить товар">25500 Р.</a>
+      <p class="product-item-old-price">30500 Р.</p>
+      <a href="#" aria-label="Купить товар" class="color-white background-basic-red">25500 Р.</a>
     </article>
-    <article>
-      <div>New</div>
+    <article class="product-item">
+      <div class="new color-white">New</div>
       <img src="img/object-2000.jpg" alt="instrument 2k" width="125" height="110">
-      <h3>Перфоратор BOSCH<br>
+      <h3 class="product-item-header">Перфоратор BOSCH<br>
         BFG 2000</h3>
-      <a href="#" aria-label="Купить товар">12500 Р.</a>
+      <a href="#" aria-label="Купить товар" class="color-white background-basic-red">12500 Р.</a>
     </article>
   </section>
-  <div>
-    <p>Популярные производители:</p>
-    <a href="#" title="Перейти ко Всем производителям">Все производители</a>
+  <div class="popular-items">
+    <p class="popular-items-paragraph">Популярные производители:</p>
+    <a href="#" title="Перейти ко Всем производителям" class="button popular-items-button">Все производители</a>
   </div>
   <section>
     <h2 class="visually-hidden">Производители</h2>
     <ul class="producer-list">
-      <li>
+      <li class="producer-list__item">
         <img src="img/bosch.png" alt="Bosh image" width="150" height="100">
       </li>
-      <li>
+      <li class="producer-list__item">
         <img src="img/Makita.png" alt="Makita image" width="150" height="100">
       </li>
-      <li>
+      <li class="producer-list__item">
         <img src="img/DeWALT.png" alt="DeWALT image" width="150" height="100">
       </li>
-      <li>
+      <li class="producer-list__item">
         <img src="img/Интерскол.png" alt="Интерскол картинка" width="150" height="100">
       </li>
-      <li>
+      <li class="producer-list__item">
         <img src="img/Hitachi.png" alt="Hitachi image" width="150" height="100">
       </li>
-      <li>
+      <li class="producer-list__item">
         <img src="img/LG.png" alt="LG image" width="150" height="100">
       </li>
-      <li>
+      <li class="producer-list__item">
         <img src="img/AEG.png" alt="AEG Power Solutions image" width="150" height="100">
       </li>
-      <li>
+      <li class="producer-list__item">
         <img src="img/Metabo.png" alt="Metabo work. don't play image" width="150" height="100">
       </li>
     </ul>
   </section>
+  <div class="service-block">
+    <section>
+      <h2 class="service-header">Сервисы</h2>
+      <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+    </section>
+    <section>
+      <ul class="service-list">
+        <li>
+          <button type="button" class="service-button service-button-active">Доставка</button>
+        </li>
+        <li>
+          <button type="button" class="service-button">Гарантия</button>
+        </li>
+        <li>
+          <button type="button" class="service-button">Кредит</button>
+        </li>
+      </ul>
+    </section>
+  </div>
   <section>
-    <h2>Сервисы</h2>
-    <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-      Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-  </section>
-  <section>
-    <ul class="service-list">
-      <li>
-        <button type="button">Доставка</button>
-      </li>
-      <li>
-        <button type="button">Гарантия</button>
-      </li>
-      <li>
-        <button type="button">Кредит</button>
-      </li>
-    </ul>
-  </section>
-  <section>
-    <p>Доставка</p>
+    <h2 class="service-header">Доставка</h2>
     <p>Мы с удовольствием доставим ваш товар прямо<br>
       к вашему подъезду совершенно бесплатно!<br>
       Ведь мы неплохо заработаем,<br>
