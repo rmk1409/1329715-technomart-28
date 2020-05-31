@@ -269,6 +269,14 @@ img {
   background-color: var(--basic-red);
 }
 
+.order-button {
+  color: var(--white);
+}
+
+.make-order-button {
+  background-color: var(--basic-green);
+}
+
 .search-input::placeholder {
   color: var(--white);
 }
@@ -326,7 +334,8 @@ img {
 }
 
 .footer-site-navigation-link:active,
-.catalog-list-link:active {
+.catalog-list-link:active,
+.order-button:active {
   opacity: 0.5;
   text-decoration: none;
 }
@@ -351,4 +360,12 @@ img {
 
 .search-input:focus {
   background-color: var(--white);
+}
+
+.make-order-button:hover {
+  background-color: var(--sucess);
+}
+
+.upper-logo:active {
+  background-color: var(--error);
 }
