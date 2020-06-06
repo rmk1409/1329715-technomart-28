@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
@@ -8,8 +8,8 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="background-basic-background">
-<header>
+<body class="background-basic-background page-body">
+<header class="main-header">
   <div class="top-row background-basic-darkgrey color-white">
     <a href="#" title="Logo">
       <img src="img/logo-technomart.svg" width="108" height="18" alt="Logo" class="logo">
@@ -40,7 +40,7 @@
       </li>
     </ul>
   </div>
-  <div>
+  <div class="middle-row">
     <p class="short-description color-red">Интернет-магазин<br>
       строительных материалов<br>
       и инструментов для ремонта</p>
@@ -64,32 +64,32 @@
         <a href="#" aria-label="Ссылка для регистрации" class="authentication-button">Регистрация</a>
       </li>
     </ul>
-    <nav class="main-nav background-basic-grey">
-      <ul class="site-navigation">
-        <li>
-          <a href="#" title="Перейти на Главную" class="site-navigation-link">Главная</a>
-        </li>
-        <li>
-          <a href="#" title="Перейти в Компанию" class="site-navigation-link">Компания</a>
-        </li>
-        <li>
-          <a href="#" title="Перейти в Каталог" class="site-navigation-link">Каталог</a>
-        </li>
-        <li>
-          <a href="#" title="Перейти в Новости" class="site-navigation-link">Новости</a>
-        </li>
-        <li>
-          <a href="#" title="Перейти в Спецпредложения" class="site-navigation-link">Спецпредложения</a>
-        </li>
-        <li>
-          <a href="#" title="Перейти в Доставку" class="site-navigation-link">Доставка</a>
-        </li>
-        <li>
-          <a href="#" title="Перейти в Контакты" class="site-navigation-link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
   </div>
+  <nav class="main-nav background-basic-grey">
+    <ul class="site-navigation">
+      <li>
+        <a href="#" title="Перейти на Главную" class="site-navigation-link">Главная</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Компанию" class="site-navigation-link">Компания</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Каталог" class="site-navigation-link">Каталог</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Новости" class="site-navigation-link">Новости</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Спецпредложения" class="site-navigation-link">Спецпредложения</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Доставку" class="site-navigation-link">Доставка</a>
+      </li>
+      <li>
+        <a href="#" title="Перейти в Контакты" class="site-navigation-link">Контакты</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <main class="background-white">
   <section>
@@ -114,13 +114,15 @@
         <h3 class="card-catalog-header">Перфораторы</h3>
         <p class="card-catalog-paragraph">Настоящие мужские игрушки</p>
       </div>
-      <button type="button" title="Предыдущий слайд" aria-label="Previous slide" class="card-catalog-button">&lt;</button>
+      <button type="button" title="Предыдущий слайд" aria-label="Previous slide" class="card-catalog-button">&lt;
+      </button>
       <button type="button" title="Следующий слайд" aria-label="Next slide" class="card-catalog-button">&gt;</button>
       <a href="#" title="Перейти в Каталог" class="button card-catalog-open-button">Открыть каталог</a>
     </div>
     <div class="card discount">
       <h3 class="card-header">Скидки</h3>
-      <a href="#" title="Перейти в Скидочные товары" aria-label="Ссылка на скидочные товары" class="button card-button">На 350 товаров</a>
+      <a href="#" title="Перейти в Скидочные товары" aria-label="Ссылка на скидочные товары" class="button card-button">На
+        350 товаров</a>
       <img src="img/icon-4.svg" alt="Скидка иконка" width="75" height="60">
     </div>
     <div class="card delivery">
@@ -226,8 +228,8 @@
       поднимая его на ваш этаж!</p>
     <img src="img/Car.png" alt="Delivery icon" width="450" height="250">
   </section>
-  <div class="background-white">
-    <section>
+  <div class="background-white pre-footer">
+    <section class="description-section">
       <h2 class="description-header">Компания "Техномарт"</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
         ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
@@ -236,19 +238,16 @@
         Техномарт работает со многими транспортными компаниями:
       </p>
       <ul class="partner-list">
+        <li>Деловые линии
         <li>
-          Деловые линии
+        <li>Автотрейдинг
         <li>
-        <li>
-          Автотрейдинг
-        <li>
-        <li>
-          ЖелДорЭкспедиция
+        <li>ЖелДорЭкспедиция
         <li>
       </ul>
       <a href="#" title="Перейти в Подробную информацию о компании" class="contacts-button">Подробнее о компании</a>
     </section>
-    <section>
+    <section class="contacts-section">
       <h2 class="description-header">Контакты</h2>
       <p>Вы можете забрать товар сами,<br>
         заехав в наш офис:</p>
@@ -258,15 +257,15 @@
   </div>
 </main>
 <footer class="main-footer color-white background-basic-darkgrey">
-  <div class="background-basic-grey">
-    <section>
+  <div class="background-basic-grey footer-upper-row">
+    <section class="footer-contacts">
       <a href="#" title="Лого">
         <img src="img/big-logo.png" height="47" width="220" alt="Logo">
       </a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55</p>
     </section>
-    <section>
+    <section class="footer-links">
       <ul class="site-navigation">
         <li>
           <a href="#" title="Перейти в Компанию" class="footer-site-navigation-link">Компания</a>
@@ -303,15 +302,17 @@
   <div class="bottom-row">
     <p>&copy; 2010-2019 Компания "Техномарт"<br>
       Все права защищены</p>
-    <a href="#">
-      <img src="img/icon-vk.svg" alt="vk icon" width="15" height="15" class="icon">
-    </a>
-    <a href="#">
-      <img src="img/icon-fb.svg" alt="fb icon" width="15" height="15" class="icon">
-    </a>
-    <a href="#">
-      <img src="img/icon-insta.svg" alt="ins icon" width="15" height="15" class="icon">
-    </a>
+    <section class="social-section">
+      <a href="#">
+        <img src="img/icon-vk.svg" alt="vk icon" width="15" height="15" class="icon">
+      </a>
+      <a href="#">
+        <img src="img/icon-fb.svg" alt="fb icon" width="15" height="15" class="icon">
+      </a>
+      <a href="#">
+        <img src="img/icon-insta.svg" alt="ins icon" width="15" height="15" class="icon">
+      </a>
+    </section>
     <p>Обратная связь:<br>
       <a href="mailto:mail@htmlacademy.ru" aria-label="Отправить нам письмо"
          class="feedback">mail@htmlacademy.ru</a></p>
