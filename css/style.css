@@ -432,6 +432,7 @@ img {
 
 .post-script-paragraph {
   font-family: "Pt Sans", sans-serif;
+  margin: 0;
 }
 
 .page {
@@ -557,8 +558,44 @@ img {
 }
 
 .product-item {
-  width: 220px;
-  height: 317px;
+  min-width: 220px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 20px;
+}
+
+.card-catalog {
+  grid-area: 2/1/4/3;
+  flex-basis: 620px;
+}
+
+.popular-items,
+.popular-products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.producer-list {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+.service-block {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+}
+
+.service-block__description-section {
+  grid-column: 1/-1;
+}
+
+.pages {
+  grid-column: 2;
 }
 
 .page-number:active {
