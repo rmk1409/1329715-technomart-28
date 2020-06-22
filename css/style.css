@@ -40,11 +40,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,6 +50,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -93,10 +89,6 @@ img {
   background-color: var(--basic-green);
 }
 
-.background-basic-background {
-  background-color: var(--basic-background);
-}
-
 .background-white {
   background-color: var(--white);
 }
@@ -119,6 +111,8 @@ img {
 
 .top-row {
   font-size: 18px;
+  color: var(--white);
+  background-color: var(--basic-darkgrey);
 }
 
 .short-description {
@@ -254,6 +248,7 @@ img {
 
 .authentication-button {
   color: var(--black);
+  background-color: var(--white);
 }
 
 .user-link {
@@ -285,7 +280,54 @@ img {
 }
 
 .order-button {
-  color: var(--white);
+  color: inherit;
+}
+
+.favorites-button,
+.bucket-button,
+.enter-button,
+.user-block {
+  position: relative;
+  padding-left: 30px;
+}
+
+.favorites-button::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 5px;
+  top: 1px;
+  opacity: 0.3;
+}
+
+.bucket-button::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 5px;
+  top: 1px;
+  opacity: 0.3;
+}
+
+.enter-button::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 5px;
+  top: 1px;
+  opacity: 0.3;
 }
 
 .make-order-button {
@@ -449,13 +491,14 @@ img {
 }
 
 .page-body {
+  background-color: var(--basic-background);
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
 
-.top-row .container{
+.top-row .container {
   display: flex;
 }
 
@@ -474,7 +517,7 @@ img {
   text-align: center;
 }
 
-.middle-row .container{
+.middle-row .container {
   display: flex;
   justify-content: space-between;
 }
@@ -513,7 +556,7 @@ img {
   flex-grow: 1;
 }
 
-.footer-upper-row .container{
+.footer-upper-row .container {
   display: flex;
   justify-content: space-between;
 }
@@ -533,11 +576,6 @@ img {
 
 .user-name {
   flex-basis: 300px;
-}
-
-.user-block {
-  display: flex;
-  justify-content: space-around;
 }
 
 .catalog {
@@ -607,6 +645,37 @@ img {
   grid-column: 2;
 }
 
+.search__input {
+  padding-left: 30px;
+  color: inherit;
+  background-color: inherit;
+}
+
+.search {
+  position: relative;
+}
+
+.search__icon {
+  opacity: 0.3;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.user-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-block:hover svg{
+  opacity: 1;
+}
+
+.user-block:active svg{
+  opacity: 0.3;
+}
+
 .page-number:active {
   border-color: var(--basic-red);
 }
@@ -641,8 +710,9 @@ img {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.search-input::placeholder {
-  color: var(--white);
+.search__input::placeholder {
+  color: inherit;
+  background-color: inherit;
 }
 
 .authentication-button:hover,
@@ -650,7 +720,6 @@ img {
   color: var(--basic-red);
 }
 
-.authentication-button:hover .enter-icon,
 .user-block:hover .user-icon {
   fill: var(--basic-darkgrey);
 }
@@ -697,9 +766,17 @@ img {
   text-decoration: underline;
 }
 
+.order-button:hover::before,
+.enter-button:hover::before {
+  opacity: 1;
+}
+
+.enter-button:active::before {
+  opacity: 0.3;
+}
+
 .footer-site-navigation-link:active,
-.catalog-list-link:active,
-.order-button:active {
+.catalog-list-link:active {
   opacity: 0.5;
   text-decoration: none;
 }
@@ -714,16 +791,22 @@ img {
   text-decoration: none;
 }
 
-.search-form:hover .order-icon {
-  fill: var(--white);
+.search:hover .search__icon {
+  opacity: 1;
 }
 
-.search-input:focus .order-icon {
+.search__input:focus+.search__icon {
   fill: var(--basic-red);
+  opacity: 1;
 }
 
-.search-input:focus {
+.search__input:focus {
   background-color: var(--white);
+  color: var(--black);
+}
+
+.search__input:focus::placeholder {
+  opacity: 0;
 }
 
 .make-order-button:hover {

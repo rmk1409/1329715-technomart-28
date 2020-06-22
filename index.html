@@ -8,33 +8,31 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="background-basic-background page-body">
-<header class="main-header">
-  <div class="top-row background-basic-darkgrey color-white">
+<body class="page-body">
+<header>
+  <div class="top-row">
     <div class="container">
-      <a href="#" title="Logo">
+      <a href="#" title="Logo" class="upper-logo">
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Logo" class="logo">
       </a>
       <div>
-        <form action="#" class="search-form">
-          <button aria-label="Search-button" class="search-button background-basic-darkgrey">
-            <img src="img/icon-search.svg" alt="Search icon" width="15" height="15" class="order-icon">
-          </button>
+        <form action="#" class="search">
           <label for="search-field" class="visually-hidden">Поиск</label>
           <input type="search" name="search" id="search-field" placeholder="Поиск:"
-                 class="search-input background-basic-darkgrey">
+                 class="search__input">
+          <svg width="17" height="17" fill="#fff" xmlns="http://www.w3.org/2000/svg" class="search__icon">
+            <path clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"
+            />
+          </svg>
         </form>
       </div>
       <ul class="order-navigation">
         <li>
-          <a href="#" class="order-button">
-            <img src="img/icon-bookmark.svg" alt="Favorites icon" width="15" height="15" class="order-icon">Закладки: 0
-          </a>
+          <a href="#" class="order-button favorites-button">Закладки: 0</a>
         </li>
         <li>
-          <a href="#" class="order-button">
-            <img src="img/icon-cart.svg" alt="Bucket icon" width="15" height="15" class="order-icon">Корзина: 0
-          </a>
+          <a href="#" class="order-button bucket-button">Корзина: 0</a>
         </li>
         <li>
           <a href="#" class="order-button make-order-button">Оформить заказ</a>
@@ -58,10 +56,7 @@
       </section>
       <ul class="authentication-menu">
         <li>
-          <a href="#" aria-label="Ссылка для входа" class="authentication-button">
-            <img src="img/icon-login.svg" alt="Login icon" width="15" height="15" class="enter-icon">
-            Войти
-          </a>
+          <a href="#" aria-label="Ссылка для входа" class="authentication-button enter-button">Войти</a>
         </li>
         <li>
           <a href="#" aria-label="Ссылка для регистрации" class="authentication-button">Регистрация</a>
