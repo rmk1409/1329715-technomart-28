@@ -610,7 +610,7 @@ a {
 
 .options {
   display: grid;
-  grid-template-columns: repeat(3, 220px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
