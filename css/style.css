@@ -190,6 +190,12 @@ a {
   border: 1px solid var(--light-grey);
 }
 
+.producer-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .product-item-header {
   font-size: 18px;
   line-height: 20px;
