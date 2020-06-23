@@ -835,6 +835,10 @@ a {
   background-color: var(--sucess);
 }
 
+.make-order-button:active {
+  background-color: var(--basic-green);
+}
+
 .upper-logo:active {
   background-color: var(--error);
 }
