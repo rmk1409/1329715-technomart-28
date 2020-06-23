@@ -680,6 +680,16 @@ a {
   align-items: center;
 }
 
+.upper-logo::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 5px;
+  background-color: #BA2732;
+  top: 25px;
+  left: 0;
+}
+
 .user-block:hover svg{
   opacity: 1;
 }
@@ -827,6 +837,10 @@ a {
 
 .upper-logo:active {
   background-color: var(--error);
+}
+
+.upper-logo:active::after {
+  background-color: #8d1e26;
 }
 
 .card-catalog-open-button:active {
