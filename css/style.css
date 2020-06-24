@@ -172,8 +172,46 @@ a {
   line-height: 30px;
 }
 
-.filter-label {
-  line-height: 18px;
+.check {
+  padding-left: 2em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.check__input {
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.check__box {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  margin-left: -2em;
+  margin-top: -0.1em;
+}
+
+.check__box:hover {
+  background-image: url("../img/checkbox-off-hover.svg");
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.check__input:checked:hover + .check__box {
+  background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.check__input:disabled + .check__box {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.check__input:checked:disabled + .check__box {
+  background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
 }
 
 .filter-button {
@@ -696,11 +734,11 @@ a {
   left: 0;
 }
 
-.user-block:hover svg{
+.user-block:hover svg {
   opacity: 1;
 }
 
-.user-block:active svg{
+.user-block:active svg {
   opacity: 0.3;
 }
 
@@ -823,7 +861,7 @@ a {
   opacity: 1;
 }
 
-.search__input:focus+.search__icon {
+.search__input:focus + .search__icon {
   fill: var(--basic-red);
   opacity: 1;
 }
