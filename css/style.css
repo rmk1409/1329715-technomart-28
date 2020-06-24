@@ -25,6 +25,8 @@
   --light-grey: #eaeaea;
   --light-grey2: #a9a9a9;
   --just-grey: #f7f3ec;
+  --grey3: #d7dcde;
+  --green2: #00ca74;
 }
 
 body {
@@ -167,8 +169,86 @@ a {
 }
 
 .producer-filter,
-.energy-filter {
+.energy-filter,
+.price-filter {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.range-filter {
+  width: 220px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  background-color: var(--just-grey);
+  border-radius: 5px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--grey3);
+}
+
+.range-controls .bar {
+  width: 75%;
+  height: 2px;
+  background-color: var(--green2);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--white);
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 145px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-controls,
+.price-controls label {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.price-controls input {
+  width: 75px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--just-grey);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .legend {
