@@ -166,6 +166,11 @@ a {
   line-height: 18px;
 }
 
+.producer-filter,
+.energy-filter {
+  border: none;
+}
+
 .legend {
   font-weight: bold;
   font-size: 17px;
@@ -173,8 +178,8 @@ a {
 }
 
 .check {
-  padding-left: 2em;
-  margin-bottom: 1em;
+  padding-left: 2.4em;
+  margin-bottom: 1.5em;
   display: block;
 }
 
@@ -189,7 +194,7 @@ a {
   height: 2em;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  margin-left: -2em;
+  margin-left: -2.4em;
   margin-top: -0.1em;
 }
 
@@ -211,6 +216,37 @@ a {
 
 .check__input:checked:disabled + .check__box {
   background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
+}
+
+.check__radio {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  margin-left: -2.4em;
+  margin-top: -0.2em;
+}
+
+.check__radio:hover {
+  background-image: url("../img/radio-off-hover.svg");
+}
+
+.check__input:checked + .check__radio {
+  background-image: url("../img/radio-on.svg");
+}
+
+.check__input:checked:hover + .check__radio {
+  background-image: url("../img/radio-on-hover.svg");
+}
+
+.check__input:disabled + .check__radio {
+  background-image: url("../img/radio-off-disabled.svg");
+}
+
+.check__input:checked:disabled + .check__radio {
+  background-image: url("../img/radio-on-disabled.svg");
   background-repeat: no-repeat;
 }
 

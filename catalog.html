@@ -142,7 +142,7 @@
             <p class="filter-paragraph">0</p>
             <p class="filter-paragraph">30 000</p>
           </section>
-          <fieldset>
+          <fieldset class="producer-filter">
             <legend class="legend">Производители:</legend>
             <label class="check">
               <input type="checkbox" class="check__input" name="bosh" checked>
@@ -170,12 +170,18 @@
               Hitachi
             </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="energy-filter">
             <legend class="legend">Питание:</legend>
-            <input type="radio" name="energy-type" value="battery" id="battery-field" checked>
-            <label for="battery-field" class="filter-label">Аккумуляторные</label><br>
-            <input type="radio" name="energy-type" value="network" id="network-field">
-            <label for="network-field" class="filter-label">Сетевые</label>
+            <label class="check">
+              <input class="check__input" type="radio" name="energy-type" value="battery" checked>
+              <span class="check__radio"></span>
+              Аккумуляторные
+            </label>
+            <label class="check">
+              <input class="check__input" type="radio" name="energy-type" value="network">
+              <span class="check__radio"></span>
+              Сетевые
+            </label>
           </fieldset>
           <button class="filter-button">Показать</button>
         </form>
