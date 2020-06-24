@@ -717,6 +717,10 @@ a {
   justify-content: space-between;
 }
 
+.popular-items {
+  align-items: center;
+}
+
 .producer-list {
   display: grid;
   grid-template-columns: repeat(4, auto);
