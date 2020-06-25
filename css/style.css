@@ -972,7 +972,8 @@ input::-webkit-inner-spin-button {
   border: none;
 }
 
-.producer-list__item:hover {
+.producer-list__item:hover,
+.product-item:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
