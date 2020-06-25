@@ -798,6 +798,7 @@ input::-webkit-inner-spin-button {
   grid-area: 3/2/4/-1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .product-item {
