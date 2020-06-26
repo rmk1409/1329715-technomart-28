@@ -334,6 +334,15 @@ a {
   border: 1px solid var(--light-grey);
 }
 
+.product-item__image-wrapper {
+  min-height: 164px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .producer-list__item {
   display: flex;
   justify-content: center;
@@ -459,6 +468,7 @@ a {
   background-color: var(--basic-green);
   box-shadow: inset 0 -3px 0 #367315;
   border-radius: 2px;
+  margin-bottom: 10px;
 }
 
 .upper-logo {
