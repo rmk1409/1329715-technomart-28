@@ -84,6 +84,20 @@ a {
   margin: 0;
 }
 
+.service-list {
+  position: relative;
+}
+
+.service-list::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/shadow-line.svg");
+  width: 10px;
+  height: 279px;
+  right: 0;
+  top: -48px;
+}
+
 .top-row {
   font-size: 18px;
   color: var(--white);
