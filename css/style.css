@@ -619,6 +619,13 @@ a {
   outline: none;
   border: none;
   cursor: pointer;
+  background-image: url("../img/icon-left.svg");
+  width: 22px;
+  height: 40px;
+}
+
+.card-catalog-button-next {
+  transform: rotate(180deg);
 }
 
 .card-catalog-open-button:active {
