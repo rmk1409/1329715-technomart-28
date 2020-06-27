@@ -112,27 +112,27 @@
     <div class="catalog">
       <h1 class="visually-hidden">Каталог техномаркета</h1>
       <ul class="path-list">
-        <li>
+        <li class="path-list__list-item">
           <a href="#" title="Перейти Домой">
             <img src="img/icon-home.svg" width="14" height="12" alt="Home image">
           </a>
         </li>
-        <li>
-          >
+        <li class="path-list__list-item">
+          <img src="img/icon-right-small.svg" alt="right icon arrow">
         </li>
-        <li>
+        <li class="path-list__list-item">
           <a href="#" title="Перейти в Каталог" class="path-list__link">Каталог</a>
         </li>
-        <li>
-          >
+        <li class="path-list__list-item">
+          <img src="img/icon-right-small.svg" alt="right icon arrow">
         </li>
-        <li>
+        <li class="path-list__list-item">
           <a href="#" title="Перейти в Инструменты" class="path-list__link">Инструмент</a>
         </li>
-        <li>
-          >
+        <li class="path-list__list-item">
+          <img src="img/icon-right-small.svg" alt="right icon arrow">
         </li>
-        <li>
+        <li class="path-list__list-item">
           <a href="#" title="Перейти в Перфораторы" class="path-list__link">Перфораторы</a>
         </li>
       </ul>
@@ -161,6 +161,7 @@
               </div>
             </div>
           </fieldset>
+          <img src="img/filter-line.svg" alt="filter line">
           <fieldset class="producer-filter">
             <legend class="legend">Производители:</legend>
             <label class="check">
@@ -189,6 +190,7 @@
               Hitachi
             </label>
           </fieldset>
+          <img src="img/filter-line.svg" alt="filter line">
           <fieldset class="energy-filter">
             <legend class="legend">Питание:</legend>
             <label class="check">
@@ -207,16 +209,18 @@
       </aside>
       <section class="sort-section">
         <p class="sort-section-paragraph">Сортировка:</p>
-        <button type="button" class="sort-section-button sort-section-button-active">По цене</button>
-        <button type="button" class="sort-section-button">По типу</button>
-        <button type="button" class="sort-section-button">По функционалу</button>
-        <div>
-          <button type="button" class="sort-section-button-sort">
-            <img src="img/icon-upper-dir.svg" alt="upper dir image" width="11" height="10">
-          </button>
-          <button type="button" class="sort-section-button-sort">
-            <img src="img/icon-down-dir.svg" alt="upper dir image" width="11" height="10">
-          </button>
+        <div class="sort-section__sort-buttons">
+          <button type="button" class="sort-section-button sort-section-button-active">По цене</button>
+          <button type="button" class="sort-section-button">По типу</button>
+          <button type="button" class="sort-section-button">По функционалу</button>
+          <div>
+            <button type="button" class="sort-section-button-sort">
+              <img src="img/icon-upper-dir.svg" alt="upper dir image" width="11" height="10">
+            </button>
+            <button type="button" class="sort-section-button-sort">
+              <img src="img/icon-down-dir.svg" alt="upper dir image" width="11" height="10">
+            </button>
+          </div>
         </div>
       </section>
       <div class="product-items">
@@ -364,16 +368,16 @@
           </li>
         </ul>
         <ul class="catalog-list">
-          <li class="catalog__list-item">
+          <li class="catalog-list__list-item">
             <a href="#" title="Перейти в Материалы" class="catalog-list-link">Материалы</a>
           </li>
-          <li class="catalog__list-item">
+          <li class="catalog-list__list-item">
             <a href="#" title="Перейти в Технику" class="catalog-list-link">Техника</a>
           </li>
-          <li class="catalog__list-item">
+          <li class="catalog-list__list-item">
             <a href="#" title="Перейти в Инструменты" class="catalog-list-link">Инструмент</a>
           </li>
-          <li class="catalog__list-item">
+          <li class="catalog-list__list-item">
             <a href="#" title="Перейти в Спецпредложения" class="catalog-list-link">Спецпредложения</a>
           </li>
         </ul>
@@ -395,12 +399,15 @@
           <img src="img/icon-insta.svg" alt="instagram icon" width="21" height="21" class="icon">
         </a>
       </section>
-      <p>Обратная связь:<br>
-        <a href="mailto:mail@htmlacademy.ru" aria-label="Ссылка на отправку письма"
-           class="feedback">mail@htmlacademy.ru</a>
-      </p>
-      <p>Разработано -<br>
-        <a href="#" aria-label="Ссылка на сайт изготовителя" class="feedback">htmlacademy.ru</a></p>
+
+      <div class="feedback-div">
+        <p>Обратная связь:<br>
+          <a href="mailto:mail@htmlacademy.ru" aria-label="Ссылка на отправку письма"
+             class="feedback">mail@htmlacademy.ru</a>
+        </p>
+        <p>Разработано -<br>
+          <a href="#" aria-label="Ссылка на сайт изготовителя" class="feedback">htmlacademy.ru</a></p>
+      </div>
     </div>
   </div>
 </footer>

@@ -99,17 +99,23 @@
         <img src="img/new-corner-element.png" alt="new img for corner" class="new-corner" width="70" height="70">
         <h3 class="card-header">Материалы</h3>
         <a href="#" title="Перейти в Материалы на любой вкус" class="button card-button">На любой вкус</a>
-        <img src="img/icon-1.svg" alt="Материалы иконка" width="44" height="65">
+        <div class="card__image-container">
+          <img src="img/icon-1.svg" alt="Материалы иконка" width="44" height="65">
+        </div>
       </div>
       <div class="card instrument">
         <h3 class="card-header">Инструмент</h3>
         <a href="#" title="Перейти в Инструмент на все случаи" class="button card-button">На все случаи</a>
-        <img src="img/icon-2.svg" alt="Инструмент иконка" width="75" height="61">
+        <div class="card__image-container">
+          <img src="img/icon-2.svg" alt="Инструмент иконка" width="75" height="61">
+        </div>
       </div>
       <div class="card technique">
         <h3 class="card-header">Техника</h3>
         <a href="#" title="Перейти в Технику для стройки" class="button card-button">Для стройки</a>
-        <img src="img/icon-3.svg" alt="Техника иконка" width="78" height="62">
+        <div class="card__image-container">
+          <img src="img/icon-3.svg" alt="Техника иконка" width="78" height="62">
+        </div>
       </div>
       <div class="card-catalog">
         <div class="card-catalog-shadow">
@@ -127,13 +133,17 @@
         <a href="#" title="Перейти в Скидочные товары" aria-label="Ссылка на скидочные товары"
            class="button card-button">На
           350 товаров</a>
-        <img src="img/icon-4.svg" alt="Скидка иконка" width="59" height="72">
+        <div class="card__image-container">
+          <img src="img/icon-4.svg" alt="Скидка иконка" width="59" height="72">
+        </div>
       </div>
       <div class="card delivery">
         <h3 class="card-header">Доставка</h3>
         <a href="#" title="Перейти в условия доставки" aria-label="Ссылка на условия доставки"
            class="button card-button">Бесплатно</a>
-        <img src="img/icon-5.svg" alt="Доставка иконка" width="78" height="63">
+        <div class="card__image-container">
+          <img src="img/icon-5.svg" alt="Доставка иконка" width="78" height="63">
+        </div>
       </div>
     </section>
     <div class="popular-items">
@@ -236,24 +246,24 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="delivery-section">
         <h2 class="service-header delivery-header">Доставка</h2>
         <p>Мы с удовольствием доставим ваш товар прямо<br>
           к вашему подъезду совершенно бесплатно!<br>
           Ведь мы неплохо заработаем,<br>
           поднимая его на ваш этаж!</p>
       </section>
-      <img src="img/Car.png" alt="Delivery icon" width="468" height="261">
     </div>
   </div>
   <div class="container">
     <div class="pre-footer">
       <section class="description-section">
         <h2 class="description-header">Компания "Техномарт"</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+        <p class="pre-footer__first-paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
+          для<br>
           ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
           гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+        <p class="pre-footer__second-paragraph">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="partner-list">
@@ -266,7 +276,7 @@
       </section>
       <section class="contacts-section">
         <h2 class="description-header">Контакты</h2>
-        <p>Вы можете забрать товар сами,<br>
+        <p class="pre-footer__first-paragraph">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
         <img src="img/map.png" alt="Technomarket map coordinates" width="300" height="158">
         <button type="button" class="button write-to-us-button">Заблудились? Напишите нам!</button>
@@ -281,7 +291,7 @@
         <a href="#" title="Перейти на Главную" aria-label="Перейти на главную">
           <img src="img/big-logo.png" height="68" width="220" alt="Logo">
         </a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <p class="footer-contacts__paragraph">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55</p>
       </section>
       <section class="footer-links">
@@ -303,16 +313,16 @@
           </li>
         </ul>
         <ul class="catalog-list">
-          <li class="catalog__list-item">
+          <li class="catalog-list__list-item">
             <a href="#" title="Перейти в Материалы" class="catalog-list-link">Материалы</a>
           </li>
-          <li class="catalog__list-item">
+          <li class="catalog-list__list-item">
             <a href="#" title="Перейти в Технику" class="catalog-list-link">Техника</a>
           </li>
-          <li class="catalog__list-item">
+          <li class="catalog-list__list-item">
             <a href="#" title="Перейти в Инструмент" class="catalog-list-link">Инструмент</a>
           </li>
-          <li class="catalog__list-item">
+          <li class="catalog-list__list-item">
             <a href="#" title="Перейти в Спецпредложения" class="catalog-list-link">Спецпредложения</a>
           </li>
         </ul>
@@ -334,11 +344,13 @@
           <img src="img/icon-insta.svg" alt="ins icon" width="21" height="21" class="icon">
         </a>
       </section>
-      <p>Обратная связь:<br>
-        <a href="mailto:mail@htmlacademy.ru" aria-label="Отправить нам письмо"
-           class="feedback">mail@htmlacademy.ru</a></p>
-      <p>Разработано -<br>
-        <a href="#" aria-label="Ссылка на сайт изготовителя" class="feedback">htmlacademy.ru</a></p>
+      <div class="feedback-div">
+        <p>Обратная связь:<br>
+          <a href="mailto:mail@htmlacademy.ru" aria-label="Отправить нам письмо"
+             class="feedback">mail@htmlacademy.ru</a></p>
+        <p>Разработано -<br>
+          <a href="#" aria-label="Ссылка на сайт изготовителя" class="feedback">htmlacademy.ru</a></p>
+      </div>
     </div>
   </div>
 </footer>
