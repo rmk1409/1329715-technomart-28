@@ -1339,6 +1339,33 @@ a {
   right: 10px;
 }
 
+.slider-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.slider-button-active:before {
+  background-color: var(--basic-red);
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: 3px;
+  top: 2px;
+}
+
+.card-catalog__slider {
+  position: absolute;
+  left: 295px;
+  bottom: 28px;
+}
+
 .product-popup {
   width: 620px;
   height: 282px;
