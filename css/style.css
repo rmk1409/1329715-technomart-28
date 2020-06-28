@@ -1339,6 +1339,10 @@ a {
   right: 10px;
 }
 
+.map-popup__iframe {
+  border: none;
+}
+
 .slider-button {
   width: 10px;
   height: 10px;
