@@ -1325,10 +1325,13 @@ a {
 
 .map-popup {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  position: relative;
+  position: absolute;
+  top: 2369px;
+  left: 0;
+  right: 0;
   width: 943px;
   height: 449px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .map-popup::before,
@@ -1386,8 +1389,11 @@ a {
   width: 620px;
   height: 282px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  position: relative;
-  margin: 0 auto;
+  position: absolute;
+  top: 622px;
+  right: 0;
+  left: 0;
+  margin: auto;
   background-color: white;
 }
 
