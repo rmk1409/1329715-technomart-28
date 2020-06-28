@@ -119,9 +119,13 @@
         </div>
       </div>
       <div class="card-catalog">
-        <div class="card-catalog-shadow">
+        <div class="card-catalog-shadow instrument-1">
           <h3 class="card-catalog-header">Перфораторы</h3>
           <p class="card-catalog-paragraph">Настоящие мужские игрушки</p>
+        </div>
+        <div class="card-catalog-shadow instrument-2">
+          <h3 class="card-catalog-header">Дрели</h3>
+          <p class="card-catalog-paragraph">Соседям на радость</p>
         </div>
         <button aria-label="Previous slide" class="card-catalog-button" title="Предыдущий слайд" type="button">
         </button>
@@ -284,6 +288,19 @@
           Ведь мы неплохо заработаем,<br>
           поднимая его на ваш этаж!</p>
       </section>
+      <section class="guarantee-section">
+        <h2 class="service-header delivery-header">Гарантия</h2>
+        <p class="service-block__paragraph">Если купленный у нас товар поломается или заискрит,<br>
+          а также в случае пожара, спровоцированного его<br>
+          возгоранием, вы всегда можете быть уверены в нашей<br>
+          гарантии. Мы обменяем сгоревший товар на новый.<br>
+          Дом уж восстановите как-нибудь сами.</p>
+      </section>
+      <section class="credit-section">
+        <h2 class="service-header delivery-header">Кредит</h2>
+        <p class="service-block__paragraph">Залезть в долговую яму стало проще!<br>
+          Кредитные консультанты придут вам на помощь.</p>
+      </section>
     </div>
   </div>
   <div class="container">
@@ -309,7 +326,7 @@
         <h2 class="description-header">Контакты</h2>
         <p class="pre-footer__third-paragraph">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <img src="img/map.png" alt="Technomarket map coordinates" width="300" height="158">
+        <img src="img/instrument-1-background.png" alt="Technomarket map coordinates" width="300" height="158">
         <button type="button" class="button write-to-us-button">Заблудились? Напишите нам!</button>
       </section>
     </div>
@@ -385,23 +402,21 @@
     </div>
   </div>
 </footer>
-<section class="visually-hidden">
+<section class="write-to-us-popup">
   <h2 class="visually-hidden">Форма для письма</h2>
-  <div>Красная полоска</div>
   <form action="#" method="post">
-    <div>
+    <div class="write-to-us-popup__upper-row">
       <label for="name-field">Ваше имя:</label>
-      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-    </div>
-    <div>
       <label for="email-field">Ваш e-mail:</label>
+      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
       <input type="email" name="email" id="email-field" placeholder="email@example.com">
+      <label for="message-field" class="write-to-us-popup-form__text-area-label">Текст письма:</label>
+      <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
     </div>
-    <label for="message-field">Текст письма:</label>
-    <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
-    <button>Отправить</button>
+    <div class="write-to-us-popup__bottom-row">
+      <button class="button send-button">Отправить</button>
+    </div>
   </form>
-  <button type="button">Закрыть</button>
 </section>
 <section class="map-popup">
   <h2 class="visually-hidden">Карта</h2>

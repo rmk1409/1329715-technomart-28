@@ -220,6 +220,11 @@ a {
   margin-left: 80px;
 }
 
+.guarantee-section,
+.credit-section {
+  display: none;
+}
+
 .filter {
   text-transform: uppercase;
   font-family: "Pt Sans", sans-serif;
@@ -486,6 +491,11 @@ a {
   justify-content: center;
   align-items: center;
   border: none;
+}
+
+.send-button {
+  background-color: var(--basic-red);
+  width: 460px;
 }
 
 .add-to-favorites-button {
@@ -839,6 +849,14 @@ a {
   font-size: 36px;
   line-height: 36px;
   margin: 0;
+}
+
+.instrument-1 {
+  display: block;
+}
+
+.instrument-2 {
+  display: none;
 }
 
 .card-catalog-paragraph {
@@ -1265,7 +1283,7 @@ a {
 .service-block .container {
   display: grid;
   grid-template-columns: 240px 1fr;
-  background: var(--basic-background) url("../img/Car.png") no-repeat 481px 257px;
+  background: var(--basic-background) url("../img/delivery-background.png") no-repeat 481px 257px;
 }
 
 .service-block__description-section {
@@ -1335,7 +1353,8 @@ a {
 }
 
 .map-popup::before,
-.product-popup::before {
+.product-popup::before,
+.write-to-us-popup::before {
   content: "";
   width: 943px;
   height: 7px;
@@ -1344,7 +1363,8 @@ a {
 }
 
 .map-popup::after,
-.product-popup::after {
+.product-popup::after,
+.write-to-us-popup::after {
   content: "";
   width: 21px;
   height: 21px;
@@ -1352,6 +1372,74 @@ a {
   background-image: url("../img/icon-close.svg");
   top: 17px;
   right: 10px;
+}
+
+.map-popup,
+.product-popup,
+.write-to-us-popup {
+  display: none;
+}
+
+.write-to-us-popup {
+  width: 620px;
+  min-height: 422px;
+  position: absolute;
+  background-color: var(--white);
+  box-sizing: border-box;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 2369px;
+}
+
+.write-to-us-popup::before {
+  width: 620px;
+  top: 0;
+  left: 0;
+}
+
+.write-to-us-popup__upper-row {
+  padding: 46px 80px 37px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 11px 20px;
+}
+
+.write-to-us-popup-form__text-area-label {
+  grid-column: 1/-1;
+}
+
+.write-to-us-popup__bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  min-height: 112px;
+}
+
+.write-to-us-popup input,
+.write-to-us-popup textarea {
+  padding: 7px 8px 7px 12px;
+}
+
+.write-to-us-popup input {
+  width: 220px;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.write-to-us-popup textarea {
+  width: 460px;
+  min-height: 114px;
+  box-sizing: border-box;
+  grid-column: 1/-1;
+}
+
+.write-to-us-popup label {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .map-popup__iframe {
