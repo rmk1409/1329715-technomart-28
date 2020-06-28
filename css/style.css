@@ -438,6 +438,18 @@ a {
   align-content: center;
 }
 
+.product-item__hover-div {
+  display: none;
+}
+
+.product-item:hover .product-item__image {
+  display: none;
+}
+
+.product-item:hover .product-item__hover-div {
+  display: block;
+}
+
 .producer-list__item {
   display: flex;
   justify-content: center;
