@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 :root {
   --basic-red: #ee3643;
   --basic-green: #63a63e;
@@ -105,6 +112,7 @@ a {
 .catalog-list,
 .path-list {
   list-style: none;
+  -webkit-padding-start: 0;
   padding-inline-start: 0;
   margin: 0;
 }
@@ -600,6 +608,7 @@ a {
   border-radius: 50%;
   height: 23px;
   width: 23px;
+  -o-object-fit: none;
   object-fit: none;
   background-color: var(--special-almost-black);
 }
@@ -1077,6 +1086,7 @@ a {
   background-color: var(--basic-background);
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -1609,6 +1619,16 @@ a {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.search__input::-webkit-input-placeholder {
+  color: inherit;
+  background-color: inherit;
+}
+
+.search__input::-moz-placeholder {
+  color: inherit;
+  background-color: inherit;
+}
+
 .search__input::placeholder {
   color: inherit;
   background-color: inherit;
@@ -1702,6 +1722,14 @@ a {
 .search__input:focus {
   background-color: var(--white);
   color: var(--black);
+}
+
+.search__input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.search__input:focus::-moz-placeholder {
+  opacity: 0;
 }
 
 .search__input:focus::placeholder {
