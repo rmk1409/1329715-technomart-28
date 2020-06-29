@@ -2,7 +2,7 @@
   --basic-red: #ee3643;
   --basic-green: #63a63e;
   --basic-darkgreen: #518534;
-  --basic-grey: #32425C;
+  --basic-grey: #32425c;
   --basic-yellow: #ffd180;
   --basic-greylight: #c5c5c5;
   --basic-darkgrey: #293449;
@@ -26,7 +26,16 @@
   --light-grey2: #a9a9a9;
   --just-grey: #f7f3ec;
   --grey3: #d7dcde;
+  --grey4: #ababab;
   --green2: #00ca74;
+  --white2: #cfcfcf;
+  --white3: #e5e5e5;
+  --white4: #f4f4f4;
+  --white5: #f1f1f1;
+  --green3: #367315;
+  --brown: #84715e;
+  --light-red: #ca2c37;
+  --dark-red: #8d1e26;
 }
 
 body {
@@ -280,9 +289,9 @@ a {
   height: 4px;
   padding: 0;
   border: 8px solid var(--white);
-  background-color: #ababab;
+  background-color: var(--grey4);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--white2);
   cursor: pointer;
 }
 
@@ -499,7 +508,7 @@ a {
 }
 
 .add-to-favorites-button {
-  border: 3px solid #63A63E;
+  border: 3px solid var(--basic-green);
   box-sizing: border-box;
   border-radius: 2px;
   color: var(--basic-grey);
@@ -509,7 +518,7 @@ a {
 .filter-button {
   font-size: 13px;
   line-height: 18px;
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--white3);
   box-sizing: border-box;
   color: var(--black);
   background-color: var(--white);
@@ -628,7 +637,7 @@ a {
 
 .buy-item-button {
   background-color: var(--basic-green);
-  box-shadow: inset 0 -3px 0 #367315;
+  box-shadow: inset 0 -3px 0 var(--green3);
   border-radius: 2px;
   margin-bottom: 10px;
   margin-top: -15px;
@@ -830,7 +839,7 @@ a {
 .card-catalog {
   color: var(--white);
   background-image: url(../img/man.jpg);
-  background-color: #84715e;
+  background-color: var(--brown);
   width: 620px;
   min-height: 266px;
   position: relative;
@@ -889,7 +898,7 @@ a {
 }
 
 .card-catalog-open-button:hover {
-  background-color: #ca2c37;
+  background-color: var(--light-red);
 }
 
 .card-catalog-open-button:active {
@@ -1109,7 +1118,7 @@ a {
 }
 
 .main-nav .site-navigation {
-  box-shadow: inset 0 -5px 0 #293449;
+  box-shadow: inset 0 -5px 0 var(--basic-darkgrey);
 }
 
 .main-footer .site-navigation {
@@ -1423,7 +1432,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f4f4f4;
+  background-color: var(--white4);
   min-height: 112px;
 }
 
@@ -1523,7 +1532,7 @@ a {
 }
 
 .product-popup__bottom-row {
-  background-color: #f1f1f1;
+  background-color: var(--white5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1545,7 +1554,7 @@ a {
   position: absolute;
   width: 220px;
   height: 5px;
-  background-color: #BA2732;
+  background-color: var(--error);
   top: 42px;
   left: 0;
 }
@@ -1712,5 +1721,5 @@ a {
 }
 
 .upper-logo:active::after {
-  background-color: #8d1e26;
+  background-color: var(--dark-red);
 }
