@@ -255,11 +255,16 @@ a {
   margin: 0;
   padding: 0;
   margin-top: 14px;
-  margin-bottom: 14px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--grey3);
+}
+
+.energy-filter {
+  border-bottom: none;
+  margin-top: 22px;
 }
 
 .producer-filter {
-  margin-top: 10px;
   margin-bottom: -4px;
 }
 
@@ -366,6 +371,10 @@ a {
   display: block;
   font-size: 15px;
   line-height: 19px;
+}
+
+.check:last-child {
+  margin-bottom: 4px;
 }
 
 .check__input {
@@ -531,7 +540,7 @@ a {
   color: var(--black);
   background-color: var(--white);
   width: 100%;
-  margin-top: 19px;
+  margin-top: 9px;
 }
 
 .contacts-button {
