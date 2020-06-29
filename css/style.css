@@ -975,6 +975,28 @@ a {
   color: var(--basic-grey);
 }
 
+.user-link {
+  padding-right: 16px;
+  position: relative;
+  display: block;
+  margin-left: 17px;
+}
+
+.user-link::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: var(--basic-grey);
+  right: -3px;
+  top: 7px;
+  border-radius: 50%;
+}
+
+.user-link:last-child::after {
+  display: none;
+}
+
 .contacts-address-upper {
   text-align: center;
   margin-top: 4px;
