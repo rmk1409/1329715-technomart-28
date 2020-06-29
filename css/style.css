@@ -596,9 +596,7 @@ a {
 }
 
 .card-catalog-open-button {
-  position: absolute;
-  left: 24px;
-  bottom: 27px;
+  margin-left: 24px;
 }
 
 .main-footer {
@@ -889,6 +887,7 @@ a {
   padding: 24px;
   padding-bottom: 16px;
   box-sizing: border-box;
+  margin-bottom: 96px;
 }
 
 .card-catalog-header {
