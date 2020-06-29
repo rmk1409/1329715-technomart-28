@@ -90,6 +90,11 @@ a {
   margin-left: 2px;
 }
 
+.main-footer__contacts-phone-link {
+  color: var(--white);
+  margin-left: 3px;
+}
+
 .bottom-row__paragraph {
   margin-left: 1px;
 }
