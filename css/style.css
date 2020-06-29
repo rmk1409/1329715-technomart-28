@@ -164,6 +164,17 @@ a {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  position: relative;
+  padding-left: 33px;
+}
+
+.contacts-phone-block::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-phone.svg");
+  width: 19px;
+  height: 19px;
+  left: 37px;
 }
 
 .contacts-phone-link {
