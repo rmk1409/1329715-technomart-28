@@ -487,7 +487,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   width: 135px;
-  height: 38px;
+  min-height: 38px;
   justify-content: center;
   align-items: center;
   border: none;
@@ -661,7 +661,7 @@ a {
   background-color: var(--basic-red);
   display: flex;
   min-width: 220px;
-  height: 42px;
+  min-height: 42px;
   justify-content: center;
   align-items: center;
 }
@@ -758,7 +758,7 @@ a {
   color: var(--white);
   position: relative;
   width: 300px;
-  height: 123px;
+  min-height: 123px;
   padding-left: 23px;
   padding-top: 21px;
   box-sizing: border-box;
@@ -831,15 +831,16 @@ a {
   color: var(--white);
   background-image: url(../img/man.jpg);
   width: 620px;
-  height: 266px;
+  min-height: 266px;
   position: relative;
 }
 
 .card-catalog-shadow {
   background: rgba(0, 0, 0, 0.25);
   width: 100%;
-  height: 104px;
+  min-height: 104px;
   padding: 24px;
+  padding-bottom: 16px;
   box-sizing: border-box;
 }
 
@@ -874,7 +875,7 @@ a {
   cursor: pointer;
   background-image: url("../img/icon-left.svg");
   width: 22px;
-  height: 40px;
+  min-height: 40px;
   position: absolute;
   left: 24px;
   top: 120px;
@@ -947,7 +948,7 @@ a {
 .service-button {
   background-color: var(--basic-grey);
   width: 240px;
-  height: 61px;
+  min-height: 61px;
   justify-content: flex-start;
   padding-left: 22px;
   font-weight: bold;
@@ -982,6 +983,7 @@ a {
   padding: 0;
   font-size: 13px;
   line-height: 18px;
+  height: 18px;
 }
 
 .sort-section-button:first-child {
@@ -1002,6 +1004,10 @@ a {
   border: none;
   padding: 0;
   padding-top: 6px;
+}
+
+.sort-section-button-first {
+  margin-right: 21px;
 }
 
 .sort-section-button-sort-active__icon {
@@ -1031,7 +1037,7 @@ a {
   color: var(--black);
   text-transform: uppercase;
   width: 38px;
-  height: 38px;
+  min-height: 38px;
   margin-right: 10px;
   box-sizing: border-box;
   font-size: 13px;
@@ -1202,13 +1208,15 @@ a {
   padding: 10px;
   padding-left: 18px;
   font-family: "Pt Sans", sans-serif;
-  height: 38px;
+  min-height: 38px;
   box-sizing: border-box;
+  margin-bottom: -2px;
 }
 
 .sort-section__sort-buttons {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .sort-section-paragraph {
@@ -1348,7 +1356,7 @@ a {
   left: 0;
   right: 0;
   width: 943px;
-  height: 449px;
+  min-height: 449px;
   margin: auto;
 }
 
@@ -1448,7 +1456,7 @@ a {
 
 .slider-button {
   width: 10px;
-  height: 10px;
+  min-height: 10px;
   border-radius: 50%;
   border: none;
   position: relative;
@@ -1475,7 +1483,7 @@ a {
 
 .product-popup {
   width: 620px;
-  height: 282px;
+  min-height: 282px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   position: absolute;
   top: 622px;
