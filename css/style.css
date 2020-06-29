@@ -830,6 +830,7 @@ a {
 .card-catalog {
   color: var(--white);
   background-image: url(../img/man.jpg);
+  background-color: #84715e;
   width: 620px;
   min-height: 266px;
   position: relative;
