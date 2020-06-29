@@ -1230,7 +1230,11 @@ a {
 
 .user-name {
   flex-basis: 300px;
-  margin-left: -15px;
+  margin-left: -20px;
+}
+
+.user-name__link {
+  color: var(--black);
 }
 
 .catalog {
@@ -1391,7 +1395,7 @@ a {
   line-height: 21px;
   padding: 13px;
   background-color: var(--white);
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 
 .user-settings {
