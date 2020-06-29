@@ -96,6 +96,7 @@ a {
 }
 
 .bottom-row__paragraph {
+  margin: 0;
   margin-left: 1px;
 }
 
