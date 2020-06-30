@@ -1481,13 +1481,8 @@ a {
 
 .map-popup {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  position: absolute;
-  top: 2369px;
-  left: 0;
-  right: 0;
   width: 943px;
   min-height: 449px;
-  margin: auto;
 }
 
 .map-popup::before,
@@ -1516,19 +1511,19 @@ a {
 .product-popup,
 .write-to-us-popup {
   display: none;
+  position: fixed;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .write-to-us-popup {
   width: 620px;
   min-height: 422px;
-  position: absolute;
   background-color: var(--white);
   box-sizing: border-box;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 2369px;
 }
 
 .write-to-us-popup::before {
@@ -1619,11 +1614,6 @@ a {
   width: 620px;
   min-height: 282px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  position: absolute;
-  top: 622px;
-  right: 0;
-  left: 0;
-  margin: auto;
   background-color: white;
 }
 
