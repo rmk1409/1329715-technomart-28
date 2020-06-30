@@ -1515,6 +1515,9 @@ a {
 .write-to-us-popup input,
 .write-to-us-popup textarea {
   padding: 7px 8px 7px 12px;
+  border: 2px solid var(--basic-greylight);
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 .write-to-us-popup input {
@@ -1529,6 +1532,7 @@ a {
   min-height: 114px;
   box-sizing: border-box;
   grid-column: 1/-1;
+  resize: none;
 }
 
 .write-to-us-popup label {
