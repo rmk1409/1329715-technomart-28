@@ -223,17 +223,17 @@ a {
 
 .pre-footer__first-paragraph {
   margin-bottom: 26px;
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 .pre-footer__second-paragraph {
   margin-bottom: 1px;
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 .pre-footer__third-paragraph {
   margin-bottom: 33px;
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 .service-header {
@@ -243,7 +243,7 @@ a {
 }
 
 .service-block__paragraph {
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 .delivery-header {
@@ -261,7 +261,7 @@ a {
 
 .filter {
   text-transform: uppercase;
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
   line-height: 18px;
 }
 
@@ -681,7 +681,7 @@ a {
 
 .buy-item-button,
 .add-to-favorites-button {
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, Arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -1161,7 +1161,7 @@ a {
   box-sizing: border-box;
   font-size: 13px;
   line-height: 18px;
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
   border-radius: 2px;
 }
 
@@ -1176,7 +1176,7 @@ a {
 }
 
 .post-script-paragraph {
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
   margin: 0;
 }
 
@@ -1315,7 +1315,7 @@ a {
 .path-list {
   display: flex;
   grid-area: 1/1/2/-1;
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 .product-type {
@@ -1336,7 +1336,7 @@ a {
   align-items: center;
   padding: 10px;
   padding-left: 18px;
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
   min-height: 38px;
   box-sizing: border-box;
   margin-bottom: -2px;
@@ -1363,7 +1363,7 @@ a {
 
 .product-item {
   width: 220px;
-  font-family: "Pt Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
   padding-bottom: 19px;
 }
 
