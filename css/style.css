@@ -466,10 +466,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  min-height: 318px;
   text-align: center;
   box-sizing: border-box;
+}
+
+.product-item-header + .price-button {
+  margin-top: 39px;
 }
 
 .product-item,
@@ -478,6 +480,7 @@ a {
 }
 
 .product-item__image-wrapper {
+  margin-top: 5px;
   min-height: 164px;
   display: flex;
   flex-wrap: wrap;
@@ -512,6 +515,7 @@ a {
   line-height: 20px;
   font-weight: bold;
   margin: 0;
+  margin-top: 11px;
 }
 
 .product-item-old-price {
@@ -521,6 +525,7 @@ a {
   text-decoration: line-through;
   color: var(--light-grey2);
   margin: 0;
+  margin-top: 8px;
 }
 
 .button {
@@ -599,6 +604,7 @@ a {
 
 .popular-producers-button {
   margin-right: 6px;
+  margin-top: -1px;
 }
 
 .contacts-button,
@@ -701,15 +707,6 @@ a {
 .add-to-favorites-button {
   padding-left: 2px;
 }
-
-.product-item__name-and-prices-div {
-  min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
 
 .product-item__name-and-prices-div .price-button {
   margin-bottom: -13px;
@@ -1035,18 +1032,26 @@ a {
 }
 
 .price-button {
-  background-image: url("../img/red-button.svg");
-  background-repeat: no-repeat;
   display: block;
-  min-width: 141px;
-  min-height: 44px;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px 25px 10px 32px;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   color: var(--white);
-  margin-left: 5px;
+  background-color: var(--basic-red);
+  margin-top: 13px;
+  position: relative;
+  border-radius: 2px;
+}
+
+.price-button::after {
+  content: "";
+  position: absolute;
+  border: 19px solid transparent;
+  border-left: 20px solid var(--basic-red);
+  left: 122px;
+  bottom: 0;
 }
 
 .service-block {
@@ -1350,6 +1355,7 @@ a {
 .product-item {
   min-width: 220px;
   font-family: "Pt Sans", sans-serif;
+  padding-bottom: 20px
 }
 
 .options {
