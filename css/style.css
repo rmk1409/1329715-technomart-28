@@ -1894,3 +1894,12 @@ a {
   z-index: 1;
   margin: 0;
 }
+
+.price-button:focus {
+  outline: none;
+  background-color: var(--light-red);
+}
+
+.price-button:focus::after {
+  border-left-color: var(--light-red);
+}
