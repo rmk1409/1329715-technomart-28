@@ -7,7 +7,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
 <header>
@@ -343,7 +343,7 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <a href="img/map-popup.png" aria-label="Ссылка с картой">
+        <a href="img/map-popup.png" aria-label="Ссылка с картой" class="map-open-button">
           <img src="img/map.png" alt="Technomart map coordinates" width="300" height="158">
         </a>
         <a href="write-to-us.html" class="button write-to-us-button">Заблудились? Напишите нам!</a>
@@ -438,10 +438,10 @@
     <div class="write-to-us-popup__upper-row">
       <label for="name-field">Ваше имя:</label>
       <label for="email-field">Ваш e-mail:</label>
-      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-      <input type="email" name="email" id="email-field" placeholder="email@example.com">
+      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+      <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
       <label for="message-field" class="write-to-us-popup-form__text-area-label">Текст письма:</label>
-      <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
+      <textarea id="message-field" name="message" placeholder="В свободной форме" required></textarea>
     </div>
     <div class="write-to-us-popup__bottom-row">
       <button class="button send-button">Отправить</button>
@@ -471,5 +471,6 @@
   </div>
   <button type="button" title="close popup window" class="close-popup-window"></button>
 </section>
+<script src="js/script.js"></script>
 </body>
 </html>
