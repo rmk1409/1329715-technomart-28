@@ -1864,6 +1864,21 @@ a {
   background-color: var(--dark-red);
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translate(-50%, -250%);
+  }
+  70% {
+    transform: translate(-50%, -40%);
+  }
+  90% {
+    transform: translate(-50%, -52%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translate(-50%, -250%);
