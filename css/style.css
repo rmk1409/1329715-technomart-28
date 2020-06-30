@@ -166,6 +166,10 @@ a {
   box-sizing: border-box;
   position: relative;
   padding-left: 33px;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--basic-red);
 }
 
 .contacts-phone-block::before {
@@ -175,13 +179,6 @@ a {
   width: 19px;
   height: 19px;
   left: 37px;
-}
-
-.contacts-phone-link {
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: bold;
-  color: var(--basic-red);
 }
 
 .contacts-address {
@@ -1310,6 +1307,11 @@ a {
 
 .user-name__link {
   color: var(--black);
+}
+
+.user-name__link .user-block__icon {
+  margin-left: 4px;
+  margin-right: 16px;
 }
 
 .catalog {
