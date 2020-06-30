@@ -1864,33 +1864,18 @@ a {
   background-color: var(--dark-red);
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-  70% {
-    transform: translateY(30px);
-  }
-  90% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(-50%, -250%);
   }
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%, -40%);
   }
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -52%);
   }
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -1899,7 +1884,7 @@ a {
   -webkit-animation-name: bounce;
   animation-name: bounce;
   -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+  animation-duration: 0.8s;
 }
 
 .map-popup p {
