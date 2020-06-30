@@ -463,6 +463,14 @@ a {
   box-sizing: border-box;
 }
 
+.product-item:focus-within .product-item__image {
+  display: none;
+}
+
+.product-item:focus-within .product-item__hover-div {
+  display: block;
+}
+
 .product-item-header + .price-button {
   margin-top: 39px;
 }
@@ -1774,11 +1782,6 @@ a {
 
 .add-to-favorites-button:active {
   border-color: var(--basic-greylight);
-}
-
-.add-to-favorites-button:focus,
-.buy-item-button:focus {
-  outline: none;
 }
 
 .footer-site-navigation-link:hover,
