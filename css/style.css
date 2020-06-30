@@ -1122,6 +1122,7 @@ a {
   font-size: 13px;
   line-height: 18px;
   font-family: "Pt Sans", sans-serif;
+  border-radius: 2px;
 }
 
 .page-number-button-next {
@@ -1131,6 +1132,7 @@ a {
 .page-number-button-active {
   background-color: var(--basic-red);
   color: var(--white);
+  border: none;
 }
 
 .post-script-paragraph {
