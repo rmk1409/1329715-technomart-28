@@ -1456,16 +1456,16 @@ a {
   background-image: url("../img/red-line.svg");
 }
 
-.map-popup::after,
-.product-popup::after,
-.write-to-us-popup::after {
-  content: "";
+.close-popup-window {
   width: 21px;
   height: 21px;
   position: absolute;
   background-image: url("../img/icon-close.svg");
   top: 17px;
   right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .map-popup,
