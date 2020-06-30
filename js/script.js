@@ -14,7 +14,7 @@ mapOpenButton.addEventListener("click", function (event) {
 });
 mapCloseButton.addEventListener("click", toggleMapPopup);
 
-let buyOpenButton = document.querySelector(".buy-item-button");
+let buyOpenButtons = document.querySelectorAll(".buy-item-button");
 let buyPopupSelector = ".product-popup";
 let buyCloseButton = document.querySelector(buyPopupSelector + " .close-popup-window");
 
@@ -22,9 +22,11 @@ function toggleBuyPopup() {
   document.querySelector(buyPopupSelector).classList.toggle(modalShowClass);
 }
 
-buyOpenButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  toggleBuyPopup();
+buyOpenButtons.forEach(element => {
+  element.addEventListener("click", function (event) {
+    event.preventDefault();
+    toggleBuyPopup();
+  })
 });
 buyCloseButton.addEventListener("click", toggleBuyPopup);
 
