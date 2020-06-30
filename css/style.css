@@ -730,18 +730,19 @@ a {
   min-height: 100%;
   justify-content: center;
   align-items: center;
-  min-width: 152px;
+  min-width: 151px;
   box-sizing: border-box;
 }
 
 .favorites-button {
   position: relative;
   padding-left: 30px;
+  margin-right: 4px;
 }
 
 .bucket-button {
   min-width: 136px;
-  margin-left: 17px;
+  margin-left: 14px;
   position: relative;
   padding-left: 15px;
 }
@@ -767,7 +768,7 @@ a {
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  left: 27px;
+  left: 25px;
   top: 12px;
   opacity: 0.3;
 }
@@ -817,8 +818,7 @@ a {
   position: relative;
   width: 300px;
   min-height: 123px;
-  padding-left: 23px;
-  padding-top: 21px;
+  padding: 21px 110px 21px 23px;
   box-sizing: border-box;
 }
 
@@ -1098,6 +1098,11 @@ a {
   font-size: 13px;
   line-height: 18px;
   height: 18px;
+  margin-right: 10px;
+}
+
+.sort-section-button:last-child {
+  margin-right: 0;
 }
 
 .sort-section-button:first-child {
@@ -1149,8 +1154,9 @@ a {
   border: 1px solid var(--light-grey);
   color: var(--black);
   text-transform: uppercase;
-  width: 38px;
   min-height: 38px;
+  padding: 10px 15px;
+  width: auto;
   margin-right: 10px;
   box-sizing: border-box;
   font-size: 13px;
@@ -1221,6 +1227,7 @@ a {
 .catalog-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-nav .site-navigation {
@@ -1265,6 +1272,7 @@ a {
 
 .upper-contacts-section {
   margin-left: 20px;
+  width: 270px;
 }
 
 .footer-upper-row .container {
@@ -1277,7 +1285,7 @@ a {
 }
 
 .footer-links {
-  flex-basis: 547px;
+  width: 547px;
 }
 
 .bottom-row .container {
@@ -1324,6 +1332,7 @@ a {
 .sort-section {
   grid-area: 3/2/4/-1;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 10px;
   padding-left: 18px;
@@ -1335,8 +1344,8 @@ a {
 
 .sort-section__sort-buttons {
   display: flex;
-  width: 100%;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .sort-section-paragraph {
@@ -1353,9 +1362,9 @@ a {
 }
 
 .product-item {
-  min-width: 220px;
+  width: 220px;
   font-family: "Pt Sans", sans-serif;
-  padding-bottom: 20px
+  padding-bottom: 19px;
 }
 
 .options {
@@ -1423,7 +1432,7 @@ a {
 .pages {
   display: flex;
   grid-area: 5/2/6/-1;
-  margin-top: 28px;
+  margin-top: 27px;
 }
 
 .search__input {
