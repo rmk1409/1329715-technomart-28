@@ -825,6 +825,17 @@ a {
   box-sizing: border-box;
 }
 
+.card::before {
+  position: absolute;
+  content: "";
+  width: 44px;
+  height: 65px;
+  right: 43px;
+  top: 31px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+}
+
 .material {
   background-color: var(--special-yellow);
 }
@@ -833,16 +844,48 @@ a {
   background-color: var(--special-blue);
 }
 
+.instrument::before {
+  background-image: url("../img/icon-2.svg");
+  width: 75px;
+  height: 61px;
+  right: 31px;
+  top: 34px;
+}
+
 .technique {
   background-color: var(--special-lilac);
+}
+
+.technique::before {
+  background-image: url("../img/icon-3.svg");
+  width: 80px;
+  height: 65px;
+  right: 28px;
+  top: 31px;
 }
 
 .discount {
   background-color: var(--special-green);
 }
 
+.discount::before {
+  background-image: url("../img/icon-4.svg");
+  width: 59px;
+  height: 72px;
+  right: 45px;
+  top: 26px;
+}
+
 .delivery {
   background-color: var(--special-yellow2);
+}
+
+.delivery::before {
+  background-image: url("../img/icon-5.svg");
+  width: 84px;
+  height: 65px;
+  right: 25px;
+  top: 31px;
 }
 
 .card-header {
@@ -851,17 +894,6 @@ a {
   line-height: 30px;
   margin: 0;
   margin-bottom: 13px;
-}
-
-.card__image-container {
-  display: flex;
-  width: 139px;
-  min-height: 128px;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .card-button {
