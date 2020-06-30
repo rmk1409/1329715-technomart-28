@@ -56,7 +56,7 @@
       </section>
       <section class="user-name">
         <div class="user-block">
-          <a href="#" aria-label="User page link" tabindex="1">
+          <a href="#" aria-label="User page link">
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.3"
                  class="user-block__icon">
               <path
@@ -65,10 +65,10 @@
               />
             </svg>
           </a>
-          <a href="#" aria-label="User page link" class="user-name__link" tabindex="1">
+          <a href="#" aria-label="User page link" class="user-name__link">
             <span>Равшан Джамшутович</span>
           </a>
-          <a href="#" aria-label="Logoff link" tabindex="1">
+          <a href="#" aria-label="Logoff link">
             <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.3"
                  class="user-block__icon">
               <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#3D546F"/>
@@ -170,41 +170,41 @@
           <fieldset class="producer-filter">
             <legend class="legend">Производители:</legend>
             <label class="check">
-              <input type="checkbox" class="check__input" name="bosch" checked>
-              <span class="check__box"></span>
+              <input type="checkbox" class="check__input" name="bosch" checked tabindex="-1">
+              <span class="check__box" tabindex="0"></span>
               Bosch
             </label>
             <label class="check">
-              <input type="checkbox" class="check__input" name="interscol">
-              <span class="check__box"></span>
+              <input type="checkbox" class="check__input" name="interscol" tabindex="-1">
+              <span class="check__box" tabindex="0"></span>
               Интерскол
             </label>
             <label class="check">
-              <input type="checkbox" class="check__input" name="makita" checked>
-              <span class="check__box"></span>
+              <input type="checkbox" class="check__input" name="makita" checked tabindex="-1">
+              <span class="check__box" tabindex="0"></span>
               Makita
             </label>
             <label class="check">
-              <input type="checkbox" class="check__input" name="dewalt">
-              <span class="check__box"></span>
+              <input type="checkbox" class="check__input" name="dewalt" tabindex="-1">
+              <span class="check__box" tabindex="0"></span>
               Dewalt
             </label>
             <label class="check">
-              <input type="checkbox" class="check__input" name="Hitachi" id="hitachi-field">
-              <span class="check__box"></span>
+              <input type="checkbox" class="check__input" name="Hitachi" id="hitachi-field" tabindex="-1">
+              <span class="check__box" tabindex="0"></span>
               Hitachi
             </label>
           </fieldset>
           <fieldset class="energy-filter">
             <legend class="legend">Питание:</legend>
             <label class="check">
-              <input class="check__input" type="radio" name="energy-type" value="battery" checked>
-              <span class="check__radio"></span>
+              <input class="check__input" type="radio" name="energy-type" value="battery" checked tabindex="-1">
+              <span class="check__radio" tabindex="0"></span>
               Аккумуляторные
             </label>
             <label class="check">
-              <input class="check__input" type="radio" name="energy-type" value="network">
-              <span class="check__radio"></span>
+              <input class="check__input" type="radio" name="energy-type" value="network" tabindex="-1">
+              <span class="check__radio" tabindex="0"></span>
               Сетевые
             </label>
           </fieldset>
@@ -214,21 +214,24 @@
       <section class="sort-section">
         <p class="sort-section-paragraph">Сортировка:</p>
         <div class="sort-section__sort-buttons">
-          <button type="button" class="sort-section-button sort-section-button-active" tabindex="1">По цене</button>
-          <button type="button" class="sort-section-button" tabindex="1">По типу</button>
-          <button type="button" class="sort-section-button" tabindex="1">По функционалу</button>
-          <button type="button" class="sort-section-button-sort sort-section-button-first" tabindex="1">
+          <a href="#" aria-label="Ссылка сортировки по цене" class="sort-section-button sort-section-button-active">
+            По цене
+          </a>
+          <a href="#" aria-label="Ссылка сортировки по типу" class="sort-section-button">По типу</a>
+          <a href="#" aria-label="Ссылка сортировки по функционалу" class="sort-section-button">По функционалу</a>
+          <a href="#" aria-label="Ссылка сортировки по возрастанию"
+             class="sort-section-button-sort sort-section-button-first">
             <svg width="11" height="10" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg"
                  class="sort-section-button__icon sort-section-button-sort-active__icon">
               <path d="M5.5 0L11 10H0"/>
             </svg>
-          </button>
-          <button type="button" class="sort-section-button-sort" tabindex="1">
+          </a>
+          <a href="#" aria-label="Ссылка сортировки по убыванию" class="sort-section-button-sort">
             <svg width="11" height="10" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg"
                  class="sort-section-button__icon">
               <path d="M5.5 10L0 0h11"/>
             </svg>
-          </button>
+          </a>
         </div>
       </section>
       <div class="product-items">
@@ -236,9 +239,7 @@
           <div class="product-item__image-wrapper">
             <img src="img/object-6000.jpg" alt="instrument 6000" width="144" height="128" class="product-item__image">
             <div class="product-item__hover-div">
-              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button" tabindex="1">
-                Купить
-              </a>
+              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button">Купить</a>
               <button type="button" class="button add-to-favorites-button" tabindex="1">В закладки</button>
             </div>
           </div>
@@ -253,9 +254,7 @@
           <div class="product-item__image-wrapper">
             <img src="img/object-6000.jpg" alt="instrument 6000" width="144" height="128" class="product-item__image">
             <div class="product-item__hover-div">
-              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button" tabindex="1">
-                Купить
-              </a>
+              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button">Купить</a>
               <button type="button" class="button add-to-favorites-button" tabindex="1">В закладки</button>
             </div>
           </div>
@@ -270,9 +269,7 @@
           <div class="product-item__image-wrapper">
             <img src="img/object-6000.jpg" alt="instrument 6000" width="144" height="128" class="product-item__image">
             <div class="product-item__hover-div">
-              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button" tabindex="1">
-                Купить
-              </a>
+              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button">Купить</a>
               <button type="button" class="button add-to-favorites-button" tabindex="1">В закладки</button>
             </div>
           </div>
@@ -287,9 +284,7 @@
           <div class="product-item__image-wrapper">
             <img src="img/object-3000.jpg" alt="instrument 3000" width="127" height="112" class="product-item__image">
             <div class="product-item__hover-div">
-              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button" tabindex="1">
-                Купить
-              </a>
+              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button">Купить</a>
               <button type="button" class="button add-to-favorites-button" tabindex="1">В закладки</button>
             </div>
           </div>
@@ -304,9 +299,7 @@
           <div class="product-item__image-wrapper">
             <img src="img/object-6000.jpg" alt="instrument 6000" width="144" height="128" class="product-item__image">
             <div class="product-item__hover-div">
-              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button" tabindex="1">
-                Купить
-              </a>
+              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button">Купить</a>
               <button type="button" class="button add-to-favorites-button" tabindex="1">В закладки</button>
             </div>
           </div>
@@ -321,9 +314,7 @@
           <div class="product-item__image-wrapper">
             <img src="img/object-2000.jpg" alt="instrument 2000" width="127" height="112" class="product-item__image">
             <div class="product-item__hover-div">
-              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button" tabindex="1">
-                Купить
-              </a>
+              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button">Купить</a>
               <button type="button" class="button add-to-favorites-button" tabindex="1">В закладки</button>
             </div>
           </div>
@@ -337,9 +328,7 @@
           <div class="product-item__image-wrapper">
             <img src="img/object-3000.jpg" alt="instrument 3000" width="127" height="112" class="product-item__image">
             <div class="product-item__hover-div">
-              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button" tabindex="1">
-                Купить
-              </a>
+              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button">Купить</a>
               <button type="button" class="button add-to-favorites-button" tabindex="1">В закладки</button>
             </div>
           </div>
@@ -354,9 +343,7 @@
           <div class="product-item__image-wrapper">
             <img src="img/object-6000.jpg" alt="instrument 6k" width="144" height="128" class="product-item__image">
             <div class="product-item__hover-div">
-              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button" tabindex="1">
-                Купить
-              </a>
+              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button">Купить</a>
               <button type="button" class="button add-to-favorites-button" tabindex="1">В закладки</button>
             </div>
           </div>
@@ -371,9 +358,7 @@
           <div class="product-item__image-wrapper">
             <img src="img/object-2000.jpg" alt="instrument 2k" width="127" height="112" class="product-item__image">
             <div class="product-item__hover-div">
-              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button" tabindex="1">
-                Купить
-              </a>
+              <a href="buy-item.html" aria-label="Ссылна - купить товар" class="button buy-item-button">Купить</a>
               <button type="button" class="button add-to-favorites-button" tabindex="1">В закладки</button>
             </div>
           </div>
