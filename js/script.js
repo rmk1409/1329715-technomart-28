@@ -1,4 +1,5 @@
 let modalShowClass = "modal-show";
+let errorShowClass = "error-show";
 
 let mapOpenButton = document.querySelector(".map-open-button");
 if (mapOpenButton) {
@@ -36,7 +37,8 @@ let writeToUsOpenButton = document.querySelector(".write-to-us-button");
 if (writeToUsOpenButton) {
 
   let writeToUsPopupSelector = ".write-to-us-popup";
-  let writeToUsCloseButton = document.querySelector(writeToUsPopupSelector + " .close-popup-window");
+  let writeToUsWindow = document.querySelector(writeToUsPopupSelector);
+  let writeToUsCloseButton = writeToUsWindow.querySelector(" .close-popup-window");
 
   function toggleWriteToUsPopup() {
     document.querySelector(writeToUsPopupSelector).classList.toggle(modalShowClass);
@@ -49,6 +51,7 @@ if (writeToUsOpenButton) {
   let writeToUsForm = document.querySelector(writeToUsPopupSelector + " form");
   let nameInput = writeToUsForm.querySelector("#name-field");
   let emailInput = writeToUsForm.querySelector("#email-field");
+  let messageInput = writeToUsForm.querySelector("#message-field");
   writeToUsOpenButton.addEventListener("click", function (event) {
     event.preventDefault();
     toggleWriteToUsPopup();
@@ -70,8 +73,17 @@ if (writeToUsOpenButton) {
   });
   writeToUsCloseButton.addEventListener("click", toggleWriteToUsPopup);
   writeToUsForm.addEventListener("submit", function (event) {
+    event.preventDefault();
     let nameValue = nameInput.value;
     let emailValue = emailInput.value;
+    let msgValue = messageInput.value;
+
+    if (!nameValue || !emailValue || !msgValue) {
+      writeToUsWindow.classList.remove(errorShowClass);
+      writeToUsWindow.offsetWidth = writeToUsWindow.offsetWidth;
+      writeToUsWindow.classList.add(errorShowClass);
+    }
+
     if (nameValue && emailValue && isStorageSupport) {
       localStorage.setItem("name", nameValue);
       localStorage.setItem("email", emailValue);

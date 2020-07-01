@@ -1950,6 +1950,29 @@ a {
   animation-duration: 0.8s;
 }
 
+@keyframes shake {
+  10%, 90% {
+    transform: translate(-48%, -50%);
+  }
+
+  20%, 80% {
+    transform: translate(-52%, -50%);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-49%, -50%);
+  }
+
+  40%, 60% {
+    transform: translate(-51%, -50%);
+  }
+}
+
+.error-show {
+  animation-name: shake;
+  animation-duration: 0.4s;
+}
+
 .map-popup p {
   position: absolute;
   top: 0;
