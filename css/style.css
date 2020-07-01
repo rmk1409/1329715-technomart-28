@@ -102,7 +102,6 @@ a {
 
 .social-section {
   margin-left: 45px;
-  margin-top: 7px;
 }
 
 .background-white {
@@ -154,6 +153,7 @@ a {
   font-style: italic;
   color: var(--basic-red);
   margin-left: 30px;
+  width: 197px;
 }
 
 .contacts-phone-block {
@@ -239,8 +239,13 @@ a {
   font-weight: normal;
 }
 
-.service-block__paragraph {
+.service-block__paragraph,
+.service-block__inner-paragraph {
   font-family: "Pt Sans", "Arial", sans-serif;
+}
+
+.service-block__inner-paragraph {
+  width: 340px;
 }
 
 .delivery-header {
@@ -562,6 +567,8 @@ a {
   justify-content: center;
   align-items: center;
   border: none;
+  padding: 10px 22px;
+  box-sizing: border-box;
 }
 
 .credit-section__button {
@@ -1447,7 +1454,7 @@ a {
 .post-script {
   background-color: var(--basic-background);
   padding-top: 64px;
-  padding-bottom: 68px;
+  padding-bottom: 66px;
 }
 
 .post-script-header {
