@@ -101,8 +101,8 @@ a {
 }
 
 .social-section {
-  margin-left: 48px;
-  margin-top: 9px;
+  margin-left: 45px;
+  margin-top: 7px;
 }
 
 .background-white {
@@ -247,8 +247,26 @@ a {
   margin-top: 0;
 }
 
-.delivery-section {
+.delivery-section,
+.guarantee-section,
+.credit-section {
   margin-left: 80px;
+}
+
+.guarantee-section .service-header {
+  margin-bottom: 23px;
+}
+
+.delivery-section {
+  background: var(--basic-background) url("../img/delivery-background.png") no-repeat 150px 20px;
+}
+
+.guarantee-section {
+  background: var(--basic-background) url("../img/guarantee-background.png") no-repeat 239px -4px;
+}
+
+.credit-section {
+  background: var(--basic-background) url("../img/credit-background.png") no-repeat 164px -3px;
 }
 
 .guarantee-section,
@@ -546,6 +564,13 @@ a {
   border: none;
 }
 
+.credit-section__button {
+  background-color: var(--basic-red);
+  margin-top: 26px;
+  border-radius: 2px;
+  width: 195px;
+}
+
 .send-button {
   background-color: var(--basic-red);
   width: 460px;
@@ -648,13 +673,17 @@ a {
 }
 
 .icon {
+  display: inline-block;
   padding: 9px;
   border-radius: 50%;
   height: 23px;
   width: 23px;
-  -o-object-fit: none;
-  object-fit: none;
   background-color: var(--special-almost-black);
+  text-align: center;
+}
+
+.icon__image {
+  vertical-align: middle;
 }
 
 .authentication-button {
@@ -1432,7 +1461,6 @@ a {
 .service-block .container {
   display: grid;
   grid-template-columns: 240px 1fr;
-  background: var(--basic-background) url("../img/delivery-background.png") no-repeat 481px 257px;
 }
 
 .service-block__description-section {
