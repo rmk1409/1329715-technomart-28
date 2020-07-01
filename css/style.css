@@ -419,6 +419,11 @@ a {
   position: absolute;
 }
 
+.check__input:focus + .check__box,
+.check__input:focus + .check__radio {
+  outline: 1px solid black;
+}
+
 .check__box {
   position: absolute;
   width: 2em;
