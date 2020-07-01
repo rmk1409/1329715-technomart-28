@@ -116,7 +116,7 @@ a {
 .service-list,
 .partner-list,
 .catalog-list,
-.path-list {
+.breadcrumbs {
   list-style: none;
   -webkit-padding-start: 0;
   padding-inline-start: 0;
@@ -198,7 +198,7 @@ a {
   margin-bottom: 60px;
 }
 
-.path-list {
+.breadcrumbs {
   text-transform: uppercase;
   line-height: 18px;
 }
@@ -520,7 +520,7 @@ a {
   line-height: 20px;
   font-weight: bold;
   margin: 0;
-  margin-top: 11px;
+  margin-top: 4px;
 }
 
 .product-item-old-price {
@@ -1253,7 +1253,7 @@ a {
   flex-grow: 1;
 }
 
-.path-list__list-item {
+.breadcrumbs__list-item {
   margin-right: 17px;
 }
 
@@ -1323,7 +1323,7 @@ a {
   padding-bottom: 60px;
 }
 
-.path-list {
+.breadcrumbs {
   display: flex;
   grid-area: 1/1/2/-1;
   font-family: "Pt Sans", "Arial", sans-serif;
@@ -1375,7 +1375,7 @@ a {
 .product-item {
   width: 220px;
   font-family: "Pt Sans", "Arial", sans-serif;
-  padding-bottom: 19px;
+  padding: 6px 18px 20px 18px;
 }
 
 .options {
@@ -1443,7 +1443,7 @@ a {
 .pages {
   display: flex;
   grid-area: 5/2/6/-1;
-  margin-top: 27px;
+  margin-top: 28px;
 }
 
 .search__input {
