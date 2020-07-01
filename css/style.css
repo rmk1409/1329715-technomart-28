@@ -743,13 +743,15 @@ a {
   box-shadow: inset 0 -3px 0 var(--green3);
   border-radius: 2px;
   margin-bottom: 10px;
-  margin-top: -15px;
-  padding-left: 18px;
+  margin-top: -21px;
+  padding-left: 34px;
   position: relative;
 }
 
 .add-to-favorites-button {
-  padding-left: 2px;
+  padding-left: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .product-item__name-and-prices-div .price-button {
@@ -1014,7 +1016,8 @@ a {
 .write-to-us-button:hover,
 .contacts-button:hover,
 .send-button:hover,
-.price-button:hover {
+.price-button:hover,
+.product-popup__make-order-button:hover {
   background-color: var(--light-red);
   outline: none;
 }
@@ -1029,7 +1032,8 @@ a {
 .write-to-us-button:active,
 .contacts-button:active,
 .send-button:active,
-.price-button:active {
+.price-button:active,
+.product-popup__make-order-button:active {
   background-color: var(--error);
   outline: none;
 }
@@ -1955,6 +1959,24 @@ a {
   animation-duration: 0.8s;
 }
 
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate(-48%, -50%);
+  }
+
+  20%, 80% {
+    transform: translate(-52%, -50%);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-49%, -50%);
+  }
+
+  40%, 60% {
+    transform: translate(-51%, -50%);
+  }
+}
+
 @keyframes shake {
   10%, 90% {
     transform: translate(-48%, -50%);
@@ -1974,7 +1996,9 @@ a {
 }
 
 .error-show {
+  -webkit-animation-name: shake;
   animation-name: shake;
+  -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
 }
 
