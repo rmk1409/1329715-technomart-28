@@ -1038,7 +1038,8 @@ a {
 .contacts-button:hover,
 .send-button:hover,
 .price-button:hover,
-.product-popup__make-order-button:hover {
+.product-popup__make-order-button:hover,
+.credit-section__button:hover {
   background-color: var(--light-red);
   outline: none;
 }
@@ -1054,7 +1055,8 @@ a {
 .contacts-button:active,
 .send-button:active,
 .price-button:active,
-.product-popup__make-order-button:active {
+.product-popup__make-order-button:active,
+.credit-section__button:active {
   background-color: var(--error);
   outline: none;
 }
