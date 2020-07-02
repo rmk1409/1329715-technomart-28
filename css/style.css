@@ -43,6 +43,7 @@
   --brown: #84715e;
   --light-red: #ca2c37;
   --dark-red: #8d1e26;
+  --red2: #ff5357;
 }
 
 body {
@@ -256,27 +257,46 @@ a {
 .guarantee-section,
 .credit-section {
   margin-left: 80px;
+  position: relative;
 }
 
 .guarantee-section .service-header {
   margin-bottom: 23px;
 }
 
-.delivery-section {
-  background: var(--basic-background) url("../img/delivery-background.png") no-repeat 150px 20px;
-}
-
-.guarantee-section {
-  background: var(--basic-background) url("../img/guarantee-background.png") no-repeat 239px -4px;
-}
-
-.credit-section {
-  background: var(--basic-background) url("../img/credit-background.png") no-repeat 164px -3px;
-}
-
 .guarantee-section,
 .credit-section {
   display: none;
+}
+
+.delivery-section::after {
+  position: absolute;
+  content: "";
+  background: transparent url("../img/delivery-background.png") no-repeat;
+  width: 468px;
+  height: 261px;
+  right: 21px;
+  top: 18px;
+}
+
+.guarantee-section::after {
+  position: absolute;
+  content: "";
+  background: transparent url("../img/guarantee-background.png") no-repeat;
+  width: 389px;
+  height: 283px;
+  right: 12px;
+  top: -5px;
+}
+
+.credit-section::after {
+  position: absolute;
+  content: "";
+  background: transparent url("../img/credit-background.png") no-repeat;
+  width: 465px;
+  height: 285px;
+  right: 10px;
+  top: -4px;
 }
 
 .filter {
@@ -577,7 +597,7 @@ a {
 }
 
 .credit-section__button {
-  background-color: var(--basic-red);
+  background-color: var(--red2);
   margin-top: 26px;
   border-radius: 2px;
   width: 195px;
@@ -1120,7 +1140,8 @@ a {
 .service-block {
   background-color: var(--basic-background);
   margin-top: 70px;
-  padding-bottom: 100px;
+  min-height: 500px;
+  padding-bottom: 22px;
 }
 
 .service-button {
@@ -1490,6 +1511,10 @@ a {
 .service-block .container {
   display: grid;
   grid-template-columns: 240px 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 960px;
+  padding: 0;
+  padding-left: 20px;
 }
 
 .service-block__description-section {
